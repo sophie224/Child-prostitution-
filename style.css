@@ -9,7 +9,9 @@ body{
 }
 .continue-ingaStory-black_background,
 .continue-ingaStory-black_background-second,
-.red_container-vagzali{
+.red_container-vagzali,
+.inga_story5
+{
     position: relative;
 }
 /* .main_section{
@@ -126,7 +128,8 @@ body{
 .second-in_street-second-container,
 .second-in_street,
 .story_about_vagzali_title,
-.vagzali_third_container{
+.vagzali_third_container
+{
     position: absolute;
     top: 0;
     width: 100%;
@@ -243,13 +246,13 @@ body{
     top: 1%;
 }
 .vagzali_third_container{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-.vagzali_third_container > div>div > p{
-    width: 30%;
     position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 60%;
+}
+.vagzali_third_article{
+    width: 17%;
     display: flex;
     align-items: center;
     background: #ffeecf;
@@ -259,4 +262,75 @@ body{
 }
 .girl_in_car{
     width: 40%;
+} 
+.inga_story5-first_container{
+    position: absolute;
+    width: 70%;
+    left: 10%;
+    top: -9%;
+    display: flex;
+    justify-content: space-around;
+}
+.fetter{
+    width: 20%;
+}
+.inga_story5_article{
+    width: 43%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffeecf;
+    padding: 5% 35px;
+    margin-top: 6%;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.inga_story5-second_container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 0;
+    margin-top: 15%;
+    justify-content: center;
+}
+/* .notebook_patern {
+    background-image: url(./assets/img/amonaridi.png);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    position: relative;
+}
+.notebook_patern p{
+    position: absolute;
+    top: 50%;
+    width: 43%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5% 35px;
+    margin-top: 6%;
+    font-weight: bold;
+    font-size: 1.2vw;
+} */
+.notebook_article{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffeecf;
+    padding: 6% 37px;
+    margin: 19% 0;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.inga_story5-third_container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 50%;
+    margin: 15% 0;
+    justify-content: center;
+    align-items: center;
 }
