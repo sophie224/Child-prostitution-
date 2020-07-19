@@ -10,7 +10,8 @@ body{
 .continue-ingaStory-black_background,
 .continue-ingaStory-black_background-second,
 .red_container-vagzali,
-.inga_story5
+.inga_story5,
+.inga_story6
 {
     position: relative;
 }
@@ -333,4 +334,54 @@ body{
     margin: 15% 0;
     justify-content: center;
     align-items: center;
+}
+.inga_story6-title{
+    width: 20%;
+    margin-left: 5%;
+}
+.inga_story6-main-container,.inga_story7-main-container{
+    position: absolute;
+    top:5%;
+}
+.inga_story6-first-container,.inga_story6-second-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25%;
+}
+.inga_story6-first-paragraph{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffeecf;
+    padding: 4% 5%;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.inga_story6-first-image{
+    width: 20%;
+    margin-top: -15%;
+}
+.inga_story6-second-image,.inga_story7-first-image{
+    width:20%;
+}
+.inga_story6-second-paragraph{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffeecf;
+    padding: 4% 2%;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.inga_story7-first-paragraph{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffeecf;
+    padding: 4% 2%;
+    font-weight: bold;
+    font-size: 1.2vw;
 }
