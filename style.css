@@ -11,7 +11,8 @@ body{
 .continue-ingaStory-black_background-second,
 .red_container-vagzali,
 .inga_story5,
-.inga_story6
+.inga_story6,
+.inga_story7
 {
     position: relative;
 }
@@ -341,12 +342,12 @@ body{
 }
 .inga_story6-main-container,.inga_story7-main-container{
     position: absolute;
-    top:5%;
+    top:3%;
 }
 .inga_story6-first-container,.inga_story6-second-container{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 25%;
+    margin-top: 6%;
 }
 .inga_story6-first-paragraph{
     width: 35%;
@@ -354,15 +355,15 @@ body{
     display: flex;
     align-items: center;
     background: #ffeecf;
-    padding: 4% 5%;
+    padding: 2% 5%;
     font-weight: bold;
     font-size: 1.2vw;
 }
 .inga_story6-first-image{
     width: 20%;
-    margin-top: -15%;
+    margin-top: -11%;
 }
-.inga_story6-second-image,.inga_story7-first-image{
+.inga_story6-second-image{
     width:20%;
 }
 .inga_story6-second-paragraph{
@@ -376,7 +377,7 @@ body{
     font-size: 1.2vw;
 }
 .inga_story7-first-paragraph{
-    width: 20%;
+    width: 17%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -384,4 +385,25 @@ body{
     padding: 4% 2%;
     font-weight: bold;
     font-size: 1.2vw;
+}
+.inga_story7-first-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inga_story7-first-image{
+    width: 37%;
+}
+.inga_story7-second-paragraph{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffeecf;
+    padding: 4% 2%;
+    font-weight: bold;
+    font-size: 1.2vw;
+    margin: 0 auto;
+}
+.inga_story7-second-container{
+    margin-top: 2%;
 }
