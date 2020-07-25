@@ -3,7 +3,9 @@ body{
     margin: 0;
     /* background-color: #0a0a0a; */
 }
-
+p{
+    font-size: 1vw;
+}
 .first_story,
 .continue-ingaStory-black_background,
 .continue-ingaStory-black_background-second,
@@ -11,7 +13,8 @@ body{
 .inga_story5,
 .inga_story6,
 .inga_story7,
-.inga_story8
+.inga_story8,
+.forth-section
 {
     margin-top: -5px;
 }
@@ -36,7 +39,7 @@ body{
     background-repeat: no-repeat;
     height: 100%;
 }*/
-.main_section,.first_story {
+.main_section,.first_story,.third-section,.forth-section {
     position: relative;
     width: 100%;
 } 
@@ -77,11 +80,11 @@ body{
     justify-content: center;
     margin: 0 auto;
     padding: 3%;
-    margin-top: 20%;
+    margin-top: 11%;
+    margin-bottom: 11%;
 }
 .main_section_pharagraph p{
     font-weight: bold;
-    font-size: 1vw;
 }
 .ingas_story_main_container{
     top: 0;
@@ -112,9 +115,8 @@ body{
     align-items: center;
     background: white;
     height: 100%;
-    padding: 20px 35px;
+    padding: 14px 16px;
     font-weight: bold;
-    font-size: 1vw;
 }
 .people_image_container{
     width: 45%;
@@ -134,10 +136,10 @@ body{
     display: flex;
     align-items: center;
     background: white;
-    padding: 20px;
+    padding: 15px 11px;
     margin: 9% 0;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 .first-in-street,
 .second-in_street-second-container,
@@ -167,7 +169,6 @@ body{
     height: 100%;
     padding: 20px 35px;
     font-weight: bold;
-    font-size: 1vw;
     margin: 10% 0;
 }
 .first_in_street-title{
@@ -197,7 +198,6 @@ body{
     height: 100%;
     padding: 20px 35px;
     font-weight: bold;
-    font-size: 1vw;
     margin: 10% 0;
 }
 .keds_left-container,
@@ -221,7 +221,6 @@ body{
     background: white;
     padding: 20px 35px;
     font-weight: bold;
-    font-size: 1vw;
     left: 8%;
     bottom: -15%;
 }
@@ -236,7 +235,6 @@ body{
     background: white;
     padding: 20px 35px;
     font-weight: bold;
-    font-size: 1vw; 
 }
 .vagzali_second_container{
     display: flex;
@@ -273,7 +271,6 @@ body{
     background: white;
     padding: 20px 35px;
     font-weight: bold;
-    font-size: 1vw; 
 }
 .girl_in_car{
     width: 40%;
@@ -298,7 +295,6 @@ body{
     padding: 5% 35px;
     margin-top: 6%;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story5-second_container{
     position: absolute;
@@ -327,7 +323,7 @@ body{
     padding: 5% 35px;
     margin-top: 6%;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.2vw;
 } */
 .notebook_article{
     width: 35%;
@@ -338,7 +334,6 @@ body{
     padding: 6% 37px;
     margin: 19% 0;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story5-third_container{
     position: absolute;
@@ -370,7 +365,6 @@ body{
     background: white;
     padding: 2% 5%;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story6-first-image{
     width: 20%;
@@ -387,7 +381,6 @@ body{
     background: white;
     padding: 4% 2%;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story6-third-paragraph{
     width: 17%;
@@ -397,7 +390,6 @@ body{
     background: white;
     padding: 4% 2%;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story6-third-container{
     display: flex;
@@ -414,7 +406,6 @@ body{
     background: white;
     padding: 4% 2%;
     font-weight: bold;
-    font-size: 1vw;
     margin: 0 auto;
 }
 /* .inga_story6-forth-container{
@@ -458,7 +449,6 @@ body{
 .inga_story7-first-notebook-patern p,.inga_story7-second-notebook-patern p{
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 1vw;
 }
 .inga_story7-second-notebook-patern p{
     width: 40%;
@@ -489,7 +479,6 @@ body{
     background: white;
     padding: 0 2%;
     font-weight: bold;
-    font-size: 1vw;
 }
 
 .inga_story7-second-paragraph{
@@ -500,7 +489,6 @@ body{
     background: white;
     padding: 0 2%;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story7-second-image{
     width: 9%;
@@ -526,7 +514,6 @@ body{
     background: white;
     padding: 2% 2%;
     font-weight: bold;
-    font-size: 1vw;
 }
 .inga_story8-second-paragraph{
     width: 55%;
@@ -537,7 +524,6 @@ body{
     padding: 1% 2%;
     font-weight: bold;
     margin:auto;
-    font-size: 1vw;
 }
 .inga_story8-third-image{
     margin: 7% 0 2% 7%;
@@ -549,3 +535,131 @@ body{
 .inga_story8-third-container{
     margin-top: 7%;
 }
+
+
+/*part2*/
+
+.main-title, 
+.second_section-second-title,
+.second_section-third-title,
+.second_section-forth-title,
+.third-section-first-title{
+    width: 40%;
+    margin-left: 4%;
+}
+
+.first-article{
+    width: 40%;
+    margin: 5% 0 0 10%;
+}
+.redBack{
+    background: #d12430;
+    padding: 2% 5%;
+    color:white
+}
+.second-article,
+.sixth-article{
+    position: relative;
+    text-align: center;
+    margin: 5% 0;
+}
+.second-article img,
+.sixth-article img{
+    width: 35%;
+}
+
+.second-article p,
+.sixth-article p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 24%;
+    top: 45%;
+    left: 50%;
+}
+
+.sixth-article {
+    color:white;
+}
+.third-article, 
+.forth-article,
+.fifth-article{
+    width: 55%;
+    margin: auto;
+}
+.second_section-first-image,
+.second_section-second-image,
+.second_section-third-image{
+    width: 65%;
+    margin: auto;
+}
+.second_section-second-title{
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+.blackBack{
+    background-color:black;
+    padding: 2% 5%;
+    color:white;
+}
+.second_section-second-image,
+.second_section-third-image,
+.fifth-article,
+.second_section-forth-title {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.third-section-first-paragraph,
+.third-section-second-paragraph,
+.third-section-third-paragraph,
+.forth-section-first-paragraph,
+.forth-section-second-paragraph{
+    color: white;
+    width: 21%;
+    left: 40%;
+    margin: 8% auto;
+}
+.third-section-first-image,
+.third-section-second-image,
+.forth-section-first-image,
+.forth-section-second-image
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer{
+    width: 25%;
+    margin: 0 auto;
+    margin-top: -15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 600px) {
+    p{
+        font-size:1.8vw ;
+    }
+}
+   */
+
+/* @media (max-width: 300px) {
+    p{
+        font-size:2.5vw ;
+    }
+} */
