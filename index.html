@@ -5,15 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
 </head>
 <body>
-
-	<div class="main_section">
-		<img width="100%" src="./assets/img/sacdeliBack.png" />
+	<div class="loader-holder">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	</div>
+	
+	<div class="main_section" >
+		<img   width="100%" src="./assets/img/sacdeliBack.png" />
 		
 		<div class="main_section_images_container">
-			<div class="main_cover">
-				<img src="./assets/img/cover.png"/>
+			<div class="main_cover"  id="scene">
+				<img data-depth="0.18" src="./assets/img/cover.png"/>
 			</div>
 			<div class="author_name">
 				<img src="./assets/img/1.png"/>
@@ -39,13 +44,13 @@
 					<img width="30%" src="./assets/img/ingasStory.png" />
 
 				</div>
-				<div class="ingaStory_first_text_container">
-					<div class="inga_first_section">
+				<div class="ingaStory_first_text_container" >
+					<div class="inga_first_section" >
 						<div class="article1">
 							<p>„თბილისი ცენტრალის“ უკანა მხარეს ავედი. ბაქანს გავცდი, ლიანდაგებს გავუყევი და ნაძვებში შევედი. ბინდდებოდა, როცა  უცხო კაცების ჯგუფი შევნიშნე, ჩემკენ მოდიოდნენ. ჩქარ-ჩქარა გადავყლაპე საცხობში ნაყიდი ხაჭაპური, მათთან მივედი და  სიგარეტი ვთხოვე. ასე გავიცანი „ძევკები“. </p>
 						</div>
-						<div class="people_image_container">
-							<img width="100%" src="./assets/img/2.png"/>
+						<div class="people_image_container" >
+							<img  width="100%" src="./assets/img/2.png"/>
 						</div>
 					</div>
 					
@@ -83,7 +88,7 @@
 						<p>თენდებოდა. ქუჩაში მოვხეტიალობდი და ვფიქრობდი. მერე ისევ ვაგზალზე მივედი,  ჩემს „ტაჩკას“ ხელი მოვკიდე და მუშაობა დავიწყე. 14 წლის ვიყავი. </p>
 					</div>
 					<div class="line_decor" style="margin-top: 10%;">
-						<img width="80%" src="./assets/img/line.png"/>
+						<img width="80%" src="./assets/img/lineWhite.png"/>
 					</div>
 				</div>
 				<div>
@@ -602,6 +607,9 @@
 	<footer>
 		<img width="100%" src="./assets/img/part3/footer.png" />
 	</footer>
+
+
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 </body>
 <script src="./script.js"></script>
 </body>
