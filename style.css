@@ -2,65 +2,42 @@ body{
     padding: 0;
     margin: 0;
     /* background-color: #0a0a0a; */
-    font-family: '3D_Unicode',sans-serif;
+    font-family: 'BPG ExtraSquare Mtavruli';
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: '3D_Unicode';
-    src: url('./assets/fonts/3DUnicode.woff') format('woff2'),
-        url('./assets/fonts/3DUnicode.woff') format('woff');
+    font-family: 'BPG ExtraSquare Mtavruli';
+    src: url('./assets/fonts/BPGExtraSquareMtavruli.woff') format('woff2'),
+        url('./assets/fonts/BPGExtraSquareMtavruli.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-
 p{
-    font-size: 1vw;
+    font-size: 1.7vw;
+    color:white;
 }
-.first_story,
-.continue-ingaStory-black_background,
-.continue-ingaStory-black_background-second,
-.red_container-vagzali,
-.inga_story5,
-.inga_story6,
-.inga_story7,
-.inga_story8,
-.forth-section
-{
-    margin-top: -6px;
+.continue-ingaStory-black_background,.inga_story5,.inga_story7{
+    background-color: black;
+}
+.first_story,.red_container-vagzali,.inga_story6{
+    background-color: #d12430;
 }
 .first_section{
     position: relative;
     width: 100%;
 }
-.continue-ingaStory-black_background,
-.continue-ingaStory-black_background-second,
-.red_container-vagzali,
-.inga_story5,
-.inga_story6,
-.inga_story7,
-.inga_story8
-{
-    position: relative;
-}
-/* .main_section{
-    background-image: url("./assets/img/sacdeliBack.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-}*/
+
 .main_section,.first_story,.third-section,.forth-section {
     position: relative;
     width: 100%;
-} 
-.main_section_images_container,
-.ingas_story_main_container
-{
-    position: absolute;
-    width: 100%;
-    top: 5%;
-}
+ } 
+ .main_section_images_container{
+     position: absolute;
+     top: 3%;
+ }
 
 .main_section_background img{
     width: 100%; 
@@ -86,7 +63,7 @@ p{
 }
 .main_section_pharagraph{
     width: 55%;
-    background: white;
+    background: #F6EBE0;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -94,27 +71,21 @@ p{
     margin-top: 11%;
     margin-bottom: 11%;
 }
-.main_section_pharagraph p{
-    font-weight: bold;
-}
 .ingas_story_main_container{
     top: 0;
 }
 .line_decor{
-    width:100%;
-    top: 0;
     display: flex;
     justify-content: center;
+    width:100%;
 }
 .inga_story_title{
     width: 90%;
-    margin: 25px auto;
+    margin: 4% auto;
 }
 .ingaStory_first_text_container{
-   
     width: 80%;
     margin: 0 auto;
-    padding: 5% 0;
 }
 .inga_first_section{
     display: flex;
@@ -124,43 +95,29 @@ p{
     width: 35%;
     display: flex;
     align-items: center;
-    background: white;
+    
     height: 100%;
     padding: 14px 16px;
-    font-weight: bold;
 }
 .people_image_container{
     width: 45%;
 }
 .left_side-images-inga,.middle_text-inga,.right_side-images-inga{
-    width: 30%;
+    width: 20%;
 }
 .three-column-section{
     display: flex;
     justify-content:space-between;
-    position: absolute;
-    top: 100%;
-    width: 80%;
+    padding: 10% 0;
 }
 .middle_text-inga{
     height: 100%;
+    width:50%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 15px 11px;
-    margin: 9% 0;
-    font-weight: bold;
+    
+    padding:2% 5%;
     font-size: 1.2vw;
-}
-.first-in-street,
-.second-in_street-second-container,
-.second-in_street,
-.story_about_vagzali_title,
-.vagzali_third_container
-{
-    position: absolute;
-    top: 0;
-    width: 100%;
 }
 
 .street-first-container{
@@ -176,19 +133,15 @@ p{
     width: 40%;
     display: flex;
     align-items: center;
-    background: white;
     height: 100%;
-    padding: 20px 35px;
-    font-weight: bold;
+    padding: 2% 5%;
+    
     margin: 10% 0;
 }
 .first_in_street-title{
     width: 40%;
 }
-/* .second-in_street-second-container{
-    position: absolute;
-    top: 0;
-} */
+
 .second-in_street-second-container .second_container{
     display: flex;
     width: 80%;
@@ -202,19 +155,18 @@ p{
     width: 80%;
 }
 .text_middle_container{
-    width: 35%;
+    width: 50%;
     display: flex;
     align-items: center;
-    background: white;
+    
     height: 100%;
-    padding: 20px 35px;
-    font-weight: bold;
+    padding: 2% 5%;
+    
     margin: 10% 0;
 }
-.keds_left-container,
-.text_middle_container
+.keds_left-container
 {
-    width:30%;
+    width:26%;
 }
 .mini_stickers_container{
     height: 100%;
@@ -226,39 +178,31 @@ p{
 }
 .second-in_street-second-container .forth_container_article{
     width: 35%;
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 20px 35px;
-    font-weight: bold;
-    left: 8%;
-    bottom: -15%;
+    padding: 2% 5%;
 }
+
 .story_about_vagzali_title{
     width: 40%;
 }
 .vagzali_article{
-    width: 30%;
-    position: absolute;
+    width: 45%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 20px 35px;
-    font-weight: bold;
+    
+    padding:  2% 5%;
+    
 }
 .vagzali_second_container{
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 15%;
     height: 100%;
-
     width: 100%;
 }
 .left_side_card,
 .right_side_card{
-    position: absolute;
     width: 15%;
 }
 .left_side_card{
@@ -270,137 +214,116 @@ p{
     top: 1%;
 }
 .vagzali_third_container{
-    position: absolute;
     display: flex;
     justify-content: space-evenly;
-    top: 60%;
+    top: 50%;
+    padding: 10% 0 20% 0;
 }
 .vagzali_third_article{
-    width: 17%;
+    width: 27%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 20px 35px;
-    font-weight: bold;
+    
+    padding: 2% 5%;
+    
 }
 .girl_in_car{
     width: 40%;
 } 
 .inga_story5-first_container{
     position: absolute;
+    top: -12%;
     width: 70%;
-    left: 10%;
-    top: -9%;
     display: flex;
     justify-content: space-around;
 }
 .fetter{
     width: 20%;
 }
+.inga_story5{
+    position: relative;
+}
 .inga_story5_article{
     width: 43%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 5% 35px;
+    
+    padding: 2% 5%;
     margin-top: 6%;
-    font-weight: bold;
+    
 }
 .inga_story5-second_container{
-    position: absolute;
     width: 100%;
     display: flex;
-    top: 0;
-    margin-top: 15%;
     justify-content: center;
 }
-/* .notebook_patern {
-    background-image: url(./assets/img/amonaridi.png);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 60%;
-    position: relative;
-}
-.notebook_patern p{
-    position: absolute;
-    top: 50%;
-    width: 43%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 5% 35px;
-    margin-top: 6%;
-    font-weight: bold;
-    font-size: 1.2vw;
-} */
+
 .notebook_article{
     width: 35%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
+    margin-top: 20%;
     padding: 6% 37px;
-    margin: 19% 0;
-    font-weight: bold;
+    
 }
 .inga_story5-third_container{
-    position: absolute;
     width: 100%;
     display: flex;
     top: 50%;
-    margin: 15% 0;
+    padding: 15% 0;
     justify-content: center;
     align-items: center;
 }
 .inga_story6-title{
     width: 20%;
-    margin-left: 5%;
+    padding: 5%;
 }
-.inga_story6-main-container,.inga_story7-main-container{
-    position: absolute;
-    top:3%;
-}
-.inga_story6-first-container,.inga_story6-second-container,.inga_story6-third-container,.inga_story6-forth-container{
+
+.inga_story6-first-container,
+.inga_story6-second-container,
+.inga_story6-third-container,
+.inga_story6-forth-container{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 15%;
+    margin-top: 2%;
+}
+.inga_story6-forth-container{
+    padding: 5% 0 13% 0;
 }
 .inga_story6-first-paragraph{
     width: 35%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
+    
     padding: 2% 5%;
-    font-weight: bold;
+    
 }
 .inga_story6-first-image{
     width: 20%;
-    margin-top: -11%;
 }
 .inga_story6-second-image{
     width:20%;
 }
 .inga_story6-second-paragraph{
-    width: 20%;
+    width: 34%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 4% 2%;
-    font-weight: bold;
+    
+    padding: 2% 5%;
+    
 }
 .inga_story6-third-paragraph{
-    width: 17%;
+    width: 23%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 4% 2%;
-    font-weight: bold;
+    
+    padding: 2% 5%;
+    
 }
 .inga_story6-third-container{
     display: flex;
@@ -414,35 +337,41 @@ p{
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
+    
     padding: 4% 2%;
-    font-weight: bold;
+    
     margin: 0 auto;
 }
-/* .inga_story6-forth-container{
-    margin-top: 2%;
-} */
-.inga_story7-main-container,.inga_story8-main-container{
-    position: absolute;
-    width: 100%;
-    top: 2%;
+
+.inga_story8,.inga_story7-main-container{
+    position: relative;
 }
+.inga_story8-main-container{
+    position: absolute;
+    top: 0;
+}
+.inga_story7-middle-image{
+    position: absolute;
+    top: -4%;
+    width: 100%;
+    left: 35%;
+}
+
 .inga_story7-middle-image{
     width:30%;
     margin: auto;
-    margin-top: -14%;
 }
 .inga_story8-middle-image{
     width:30%;
     margin: auto;
-    margin-top: -18%;
+    margin-top: -10%;
 }
 .inga_story7-title,.inga_story8-title{
     width: 35%;
-    margin: 3% 0 2% 4%;
+    padding: 5%;
 }
  .inga_story7-first-notebook-patern{
-     width: 88%;
+     width: 70%;
  }
 .inga_story7-first-notebook-patern,.inga_story7-second-notebook-patern{
     position: relative;
@@ -450,10 +379,10 @@ p{
     margin: auto;
 }
 .inga_story7-second-notebook-patern{
-    width: 100%;
+    width: 70%;
 }
 .inga_story7-first-notebook-patern p{
-    width: 33%;
+    width: 68%;
     top: 50%;
     left: 50%;
 }
@@ -470,6 +399,7 @@ p{
     display: flex;
     justify-content: space-evenly;
 }
+
 .inga_story7-first-container{
     margin-top: 5%;
 }
@@ -477,29 +407,29 @@ p{
 {
     display: flex;
     justify-content: space-around;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .inga_story7-first-image, .inga_story8-third-image{
     width: 20%;
 }
 .inga_story7-first-paragraph{
-    width: 15%;
+    width: 28%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 0 2%;
-    font-weight: bold;
+    
+    padding: 2% 5%;
+    
 }
 
 .inga_story7-second-paragraph{
-    width: 25%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 0 2%;
-    font-weight: bold;
+    
+    padding: 2% 5%;
+    
 }
 .inga_story7-second-image{
     width: 9%;
@@ -522,19 +452,19 @@ p{
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
+    
     padding: 2% 2%;
-    font-weight: bold;
+    
 }
 .inga_story8-second-paragraph{
-    width: 55%;
+    width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: white;
-    padding: 1% 2%;
-    font-weight: bold;
-    margin:auto;
+    
+    padding: 2% 5%;
+    
+    margin: auto;
 }
 .inga_story8-third-image{
     margin: 7% 0 2% 7%;
@@ -542,9 +472,6 @@ p{
 .inga_story8-forth-image{
     width: 45%;
     margin: auto;
-}
-.inga_story8-third-container{
-    margin-top: 7%;
 }
 
 
@@ -576,14 +503,14 @@ p{
 }
 .second-article img,
 .sixth-article img{
-    width: 35%;
+    width: 50%;
 }
 
 .second-article p,
 .sixth-article p{
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 24%;
+    width: 35%;
     top: 45%;
     left: 50%;
 }
@@ -626,7 +553,7 @@ p{
 .forth-section-first-paragraph,
 .forth-section-second-paragraph{
     color: white;
-    width: 21%;
+    width: 55%;
     left: 40%;
     margin: 8% auto;
 }
@@ -635,7 +562,7 @@ p{
 .forth-section-first-image,
 .forth-section-second-image
 {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -644,12 +571,6 @@ footer{
     margin: 0 auto;
     margin-top: -15%;
 }
-
-
-
-
-
-
 
 
 
@@ -665,7 +586,6 @@ footer{
     height:50px;
     background-color: #d12430;
     color: #fefeff;
-    /*background-color:#3498db;*/
     text-indent:-9999px;
     display:none;
     -webkit-border-radius:60px;
@@ -704,7 +624,7 @@ footer{
     height: 100vh;
     top: 0;
     left: 0;
-    background: white;
+    
     z-index: 1000;
 }
 .lds-roller {
@@ -794,17 +714,3 @@ footer{
 
 /*loader end*/
 
-
-
-/* @media (max-width: 600px) {
-    p{
-        font-size:1.8vw ;
-    }
-}
-   */
-
-/* @media (max-width: 300px) {
-    p{
-        font-size:2.5vw ;
-    }
-} */
