@@ -16,14 +16,18 @@ body{
 }
 
 p{
-    font-size: 1.7vw;
+    font-size: 2vw;
     color:white;
+    text-align: center;
 }
 .continue-ingaStory-black_background,.inga_story5,.inga_story7{
     background-color: black;
 }
 .first_story,.red_container-vagzali,.inga_story6{
     background-color: #d12430;
+}
+.red_container-vagzali{
+    position: relative;
 }
 .first_section{
     position: relative;
@@ -77,7 +81,8 @@ p{
 .line_decor{
     display: flex;
     justify-content: center;
-    width:100%;
+    position: absolute;
+    top: -2.5%;
 }
 .inga_story_title{
     width: 90%;
@@ -101,9 +106,16 @@ p{
 }
 .people_image_container{
     width: 45%;
+    margin-top: 10%;
 }
 .left_side-images-inga,.middle_text-inga,.right_side-images-inga{
     width: 20%;
+}
+.left_side-images-inga img:nth-child(2){
+    padding: 80% 0 0 45%;
+}
+.right_side-images-inga img{
+    padding-top: 85%;
 }
 .three-column-section{
     display: flex;
@@ -122,21 +134,25 @@ p{
 
 .street-first-container{
     display: flex;
-    width: 80%;
+    width: 85%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
 
 }
+.street-first-container div:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
 .street-article{
-    width: 40%;
+    width: 100%;
     display: flex;
     align-items: center;
     height: 100%;
     padding: 2% 5%;
-    
     margin: 10% 0;
+    font-style: italic;
 }
 .first_in_street-title{
     width: 40%;
@@ -144,37 +160,39 @@ p{
 
 .second-in_street-second-container .second_container{
     display: flex;
-    width: 80%;
-    padding-top: 10%;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
 }
 .second-in_street-second-container .third_container{
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
 }
 .text_middle_container{
-    width: 50%;
+    width: 55%;
     display: flex;
     align-items: center;
-    
     height: 100%;
     padding: 2% 5%;
-    
-    margin: 10% 0;
 }
-.keds_left-container
+.keds_left-container,.mini_stickers_container
 {
-    width:26%;
+    width:15%;
+}
+.keds_left-container{
+    padding-top:10% ;
+}
+.mini_stickers_container{
+    padding-top: 40%;
 }
 .mini_stickers_container{
     height: 100%;
-    position: absolute;
-    width: 20;
-    width: 20%;
-    right: 2%;
-    top: 80%; 
+}
+.forth_container_article{
+    width: 70% !Important;
+    font-style: italic;
+    padding: 5% 0 15% 5% !important;
 }
 .second-in_street-second-container .forth_container_article{
     width: 35%;
@@ -185,33 +203,30 @@ p{
 }
 
 .story_about_vagzali_title{
-    width: 40%;
+    padding: 11% 0 5% 4%;
+    width: 52%;
 }
 .vagzali_article{
-    width: 45%;
+    width: 60%;
     display: flex;
     align-items: center;
-    
     padding:  2% 5%;
     
 }
 .vagzali_second_container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
 }
-.left_side_card,
-.right_side_card{
-    width: 15%;
+.left_side_card, .right_side_card{
+    width: 13%;
 }
 .left_side_card{
-    left: 4%;
-    top: 15%;
+    padding-top: 15%;
 }
 .right_side_card{
-    right: 4%;
-    top: 1%;
+    padding-top: 60%;
 }
 .vagzali_third_container{
     display: flex;
@@ -230,15 +245,12 @@ p{
 .girl_in_car{
     width: 40%;
 } 
-.inga_story5-first_container{
-    position: absolute;
-    top: -12%;
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-}
+
 .fetter{
-    width: 20%;
+    position: absolute;
+    width: 8%;
+    top: -80%;
+    left: 6%;
 }
 .inga_story5{
     position: relative;
@@ -259,87 +271,73 @@ p{
     justify-content: center;
 }
 
-.notebook_article{
-    width: 35%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 20%;
-    padding: 6% 37px;
-    
-}
+
 .inga_story5-third_container{
     width: 100%;
     display: flex;
-    top: 50%;
-    padding: 15% 0;
+    padding: 2% 0;
     justify-content: center;
     align-items: center;
 }
 .inga_story6-title{
-    width: 20%;
+    width: 27%;
     padding: 5%;
 }
 
 .inga_story6-first-container,
 .inga_story6-second-container,
-.inga_story6-third-container,
-.inga_story6-forth-container{
+.inga_story6-third-container{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 .inga_story6-forth-container{
     padding: 5% 0 13% 0;
 }
 .inga_story6-first-paragraph{
-    width: 35%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    
     padding: 2% 5%;
-    
 }
 .inga_story6-first-image{
+    margin-top: -6%;
     width: 20%;
 }
 .inga_story6-second-image{
     width:20%;
+    margin-top: -2%;
 }
 .inga_story6-second-paragraph{
-    width: 34%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    
     padding: 2% 5%;
-    
 }
 .inga_story6-third-paragraph{
-    width: 23%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    
     padding: 2% 5%;
-    
+    margin-top: 3%;
 }
 .inga_story6-third-container{
     display: flex;
     justify-content: space-evenly;
 }
 .inga_story6-third-image{
-    width: 37%;
+    width: 28%;
+    margin-top: -3%;
 }
 .inga_story6-forth-paragraph{
-    width: 40%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
-    
     padding: 4% 2%;
-    
     margin: 0 auto;
 }
 
@@ -352,7 +350,7 @@ p{
 }
 .inga_story7-middle-image{
     position: absolute;
-    top: -4%;
+    top: -3.5%;
     width: 100%;
     left: 35%;
 }
@@ -362,42 +360,40 @@ p{
     margin: auto;
 }
 .inga_story8-middle-image{
-    width:30%;
-    margin: auto;
-    margin-top: -10%;
+    width:35%;
 }
 .inga_story7-title,.inga_story8-title{
-    width: 35%;
-    padding: 5%;
+    width: 45%;
+    padding: 10% 0 0 6%;
 }
  .inga_story7-first-notebook-patern{
      width: 70%;
+     font-style: italic;
+     margin-top: 0 auto;
  }
 .inga_story7-first-notebook-patern,.inga_story7-second-notebook-patern{
-    position: relative;
     text-align: center;
     margin: auto;
 }
 .inga_story7-second-notebook-patern{
+    width: 100%;
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inga_story8-third-notebook-patern{
     width: 70%;
+    font-style: italic;
+    padding-top: 6%;
+    margin: 0 auto;
 }
-.inga_story7-first-notebook-patern p{
-    width: 68%;
-    top: 50%;
-    left: 50%;
-}
-.inga_story7-first-notebook-patern p,.inga_story7-second-notebook-patern p{
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-.inga_story7-second-notebook-patern p{
-    width: 40%;
-    top: 54%;
-    left: 55%;
+.inga_story7-second-notebook-patern div:nth-child(2){
+    width:60%;
 }
 .inga_story7-first-container,.inga_story8-first-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .inga_story7-first-container{
@@ -410,26 +406,25 @@ p{
     margin-top: 10%;
 }
 .inga_story7-first-image, .inga_story8-third-image{
-    width: 20%;
+    width:25%;
 }
 .inga_story7-first-paragraph{
-    width: 28%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    
     padding: 2% 5%;
-    
 }
 
 .inga_story7-second-paragraph{
-    width: 40%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    
     padding: 2% 5%;
-    
+}
+.inga_story7-second-image img:nth-child(2){
+    padding-top: 100%;
 }
 .inga_story7-second-image{
     width: 9%;
@@ -479,13 +474,18 @@ p{
 
 .main-title, 
 .second_section-second-title,
-.second_section-third-title,
-.second_section-forth-title,
-.third-section-first-title{
-    width: 40%;
+.second_section-third-title
+{
+    width: 60%;
     margin-left: 4%;
 }
 
+.second_section-forth-title{
+    width: 50%;
+}
+.third-section-first-title{
+    width: 40%;
+}
 .first-article{
     width: 40%;
     margin: 5% 0 0 10%;
@@ -499,25 +499,28 @@ p{
 .sixth-article{
     position: relative;
     text-align: center;
-    margin: 5% 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5% 0;
 }
-.second-article img,
-.sixth-article img{
+
+.second-article p,.sixth-article p{
+    color: black;
+    border: solid 5px hsla(0, 95%, 35%, 1);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     width: 50%;
+    margin: 0 auto;
+    padding:2%;
 }
-
-.second-article p,
-.sixth-article p{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 35%;
-    top: 45%;
-    left: 50%;
+.third-article  p a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
 }
-
 .sixth-article {
     color:white;
 }
+
 .third-article, 
 .forth-article,
 .fifth-article{
