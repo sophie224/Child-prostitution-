@@ -29,6 +29,15 @@ body{
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'BPG Glaho';
+    src: url('./assets/fonts/BPGGlaho-Bold.woff2') format('woff2'),
+        url('./assets/fonts/BPGGlaho-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 
@@ -92,6 +101,7 @@ p{
     margin: 0 auto;
     padding: 3%;
     margin-top: 11%;
+    font-family: 'BPG Glaho';
 }
 
 .line_decor{
