@@ -15,12 +15,21 @@ body{
 }
 @font-face {
     font-family: 'ALK Life';
-    src: url('./assets/fonts/BPGNinoMtavruli.woff2') format('woff2'),
-        url('./assets/fonts/BPGNinoMtavruli.woff') format('woff');
+    src: url('./assets/fonts/ALKLife.woff2') format('woff2'),
+        url('./assets/fonts/ALKLife.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'MG Glaho Drunk';
+    src: url('./assets/fonts/MGGlahoDrunk.woff2') format('woff2'),
+        url('./assets/fonts/MGGlahoDrunk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 
@@ -173,7 +182,7 @@ p{
 }
 .second_container .street-article{
     font-style: italic;
-    font-family: 'ALK Life';
+    font-family: 'MG Glaho Drunk';
 }
 .second-in_street-second-container .third_container{
     display: flex;
@@ -204,7 +213,7 @@ p{
     width: 70% !Important;
     font-style: italic;
     padding: 5% 0 15% 5% !important;
-    font-family: 'ALK Life';
+    font-family: 'MG Glaho Drunk';
 }
 .second-in_street-second-container .forth_container_article{
     width: 35%;
@@ -379,9 +388,11 @@ p{
     padding: 10% 0 0 6%;
 }
  .inga_story7-first-notebook-patern{
-     width: 70%;
-     margin-top: 0 auto;
-    font-family: 'ALK Life';
+    width: 70%;
+    margin-top: 0 auto;
+    font-family: 'MG Glaho Drunk';
+    font-style: italic;
+    padding: 8% 0;
  }
 .inga_story7-first-notebook-patern,.inga_story7-second-notebook-patern{
     text-align: center;
@@ -400,7 +411,7 @@ p{
     padding-top: 6%;
     margin: 0 auto;
     font-style: italic;
-    font-family: 'ALK Life';
+    font-family: 'MG Glaho Drunk';
 }
 .inga_story7-second-notebook-patern div:nth-child(2){
     width:60%;
