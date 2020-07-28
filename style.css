@@ -1,24 +1,34 @@
 body{
     padding: 0;
     margin: 0;
-    /* background-color: #0a0a0a; */
-    font-family: 'BPG ExtraSquare Mtavruli';
+    font-family: 'BPG Nino Mtavruli';
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'BPG ExtraSquare Mtavruli';
-    src: url('./assets/fonts/BPGExtraSquareMtavruli.woff') format('woff2'),
-        url('./assets/fonts/BPGExtraSquareMtavruli.woff') format('woff');
+    font-family: 'BPG Nino Mtavruli';
+    src: url('./assets/fonts/BPGNinoMtavruli.woff2') format('woff2'),
+        url('./assets/fonts/BPGNinoMtavruli.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ALK Life';
+    src: url('./assets/fonts/BPGNinoMtavruli.woff2') format('woff2'),
+        url('./assets/fonts/BPGNinoMtavruli.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+
+
 p{
     font-size: 2vw;
     color:white;
     text-align: center;
+    
 }
 .continue-ingaStory-black_background,.inga_story5,.inga_story7{
     background-color: black;
@@ -73,16 +83,12 @@ p{
     margin: 0 auto;
     padding: 3%;
     margin-top: 11%;
-    margin-bottom: 11%;
 }
-.ingas_story_main_container{
-    top: 0;
-}
+
 .line_decor{
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: -2.5%;
+  
 }
 .inga_story_title{
     width: 90%;
@@ -152,7 +158,8 @@ p{
     height: 100%;
     padding: 2% 5%;
     margin: 10% 0;
-    font-style: italic;
+    
+    
 }
 .first_in_street-title{
     width: 40%;
@@ -163,6 +170,10 @@ p{
     width: 100%;
     margin: 0 auto;
     justify-content: space-between;
+}
+.second_container .street-article{
+    font-style: italic;
+    font-family: 'ALK Life';
 }
 .second-in_street-second-container .third_container{
     display: flex;
@@ -193,6 +204,7 @@ p{
     width: 70% !Important;
     font-style: italic;
     padding: 5% 0 15% 5% !important;
+    font-family: 'ALK Life';
 }
 .second-in_street-second-container .forth_container_article{
     width: 35%;
@@ -368,8 +380,8 @@ p{
 }
  .inga_story7-first-notebook-patern{
      width: 70%;
-     font-style: italic;
      margin-top: 0 auto;
+    font-family: 'ALK Life';
  }
 .inga_story7-first-notebook-patern,.inga_story7-second-notebook-patern{
     text-align: center;
@@ -382,11 +394,13 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
+
 .inga_story8-third-notebook-patern{
     width: 70%;
-    font-style: italic;
     padding-top: 6%;
     margin: 0 auto;
+    font-style: italic;
+    font-family: 'ALK Life';
 }
 .inga_story7-second-notebook-patern div:nth-child(2){
     width:60%;
