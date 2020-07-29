@@ -139,6 +139,9 @@ p{
 .left_side-images-inga,.middle_text-inga,.right_side-images-inga{
     width: 20%;
 }
+.left_side-images-inga img:nth-child(1){
+    margin-top: -30%;
+}   
 .left_side-images-inga img:nth-child(2){
     padding: 80% 0 0 45%;
 }
@@ -177,16 +180,27 @@ p{
     display: flex;
     align-items: center;
     position: absolute;
-    top: -8%;
+    top: -5%;
     width: 100%;
 
 }
-.street-article1 p,.forth_container_article p,.inga_story7-first-notebook-patern p{
+.street-article1 p:nth-child(1),.forth_container_article p:nth-child(1),.inga_story7-first-notebook-patern p:nth-child(1){
     color: white;
     border: solid 5px hsla(0, 95%, 35%, 1);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     margin: 0 auto;
     padding:4% 10%;
+}
+.street-article1 p:nth-child(2),
+.forth_container_article p:nth-child(2),
+.inga_story7-first-notebook-patern p:nth-child(2),
+.second-article p:nth-child(2){
+    float: right;
+}
+.second-article p:nth-child(2){
+    border: none;
+    width: 55%;
+    padding: 2%;
 }
 .street-article img{
     margin: 0 auto;
@@ -196,6 +210,9 @@ p{
 }
 .second-in_street{
     padding-top: 15%;
+}
+.second-in_street-second-container{
+    padding: 0 0 10% 0;
 }
 .second-in_street-second-container .second_container{
     display: flex;
@@ -208,7 +225,6 @@ p{
  .street-article1 {
     width: 50%;
     font-style: italic;
-    font-family: 'MG Glaho Drunk';
 }
 .second-in_street-second-container .third_container{
     display: flex;
@@ -238,27 +254,25 @@ p{
 
     width: 50% !Important;
     font-style: italic;
-    font-family: 'MG Glaho Drunk';
     margin: 0 auto;
 }
 .second-in_street-second-container .forth_container_article{
     width: 35%;
     position: relative;
-    display: flex;
-    align-items: center;
+   
     padding: 2% 5%;
 }
 
 .story_about_vagzali_title{
-    padding: 11% 0 5% 4%;
-    width: 52%;
+    padding: 18% 0 5% 4%;
+    width: 50%;
 }
 .vagzali_article{
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
-    padding:  2% 5%;
-    
+    padding: 2% 5%;
+    margin: 0 auto;
 }
 .vagzali_second_container{
     display: flex;
@@ -267,13 +281,16 @@ p{
     width: 100%;
 }
 .left_side_card, .right_side_card{
-    width: 13%;
+    position: absolute;
+    width: 10%;
 }
 .left_side_card{
-    padding-top: 15%;
+    left: 2%;
+    top: 32%;
 }
 .right_side_card{
-    padding-top: 60%;
+    right: 2%;
+    top: 52%;
 }
 .vagzali_third_container{
     display: flex;
@@ -431,7 +448,6 @@ p{
  .inga_story7-first-notebook-patern{
     width: 70%;
     margin-top: 0 auto;
-    font-family: 'MG Glaho Drunk';
     font-style: italic;
     padding: 8% 0;
  }
@@ -549,19 +565,30 @@ p{
 
 /*part2*/
 
-.main-title, 
+
 .second_section-second-title,
 .second_section-third-title
-{
+{   
+   
     width: 40%;
     margin-left: 4%;
 }
-
+.second_section{
+    position: relative;
+}
+.second_section-third-title{
+    padding: 8% 0 0 0;
+}
+.main-title{
+    width:50%;
+    padding: 10% 0 0% 0;
+}
 .second_section-forth-title{
     width: 40%;
 }
 .third-section-first-title{
     width: 30%;
+    padding: 5%;
 }
 .first-article{
     width: 40%;
@@ -572,16 +599,18 @@ p{
     padding: 2% 5%;
     color:white
 }
-.second-article,
-.sixth-article{
+.second-article
+{
     position: relative;
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    padding: 5% 0;
+    padding: 10% 0;
 }
 
+
 .second-article p,.sixth-article p{
+    font-family: 'MG Glaho Drunk';
     color: black;
     border: solid 3px hsla(0, 95%, 35%, 1);
     width: 50%;
@@ -626,7 +655,19 @@ p{
     margin-top: 10%;
     margin-bottom: 10%;
 }
-
+.chapter1,.chapter2,.chapter3{
+    width: 30%;
+    margin: 0 auto;
+}
+.chapter2{
+    position: absolute;
+    top: -0.8%;
+    display: flex;
+    width: 100%;
+}
+.chapter2 img{
+    margin: 0 auto;
+}
 .third-section-first-paragraph,
 .third-section-second-paragraph,
 .third-section-third-paragraph,
@@ -793,4 +834,8 @@ footer{
 }
 
 /*loader end*/
-
+@media (max-width:600px){
+    p{
+        font-size: 2vw;
+    }
+}
