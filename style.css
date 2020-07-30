@@ -55,7 +55,6 @@ body{
 p{
     font-size: 1.5vw;
     color:white;
-    text-align: justify;
 }
 .continue-ingaStory-black_background,
 .inga_story5,
@@ -92,7 +91,12 @@ p{
  .main_section_images_container{
      position: absolute;
      top: 3%;
+     width: 100%;
  }
+
+.main_section_pharagraph > p > span{
+    font-size: 1.7vw;
+}
 
 .main_section_background img{
     width: 100%; 
@@ -122,11 +126,8 @@ p{
     justify-content: center;
     margin: 0 auto;
     padding: 3%;
-<<<<<<< HEAD
-    margin-top: 8%;
-=======
+    flex-direction: column;
     margin-top: 3%;
->>>>>>> f60fcc41a4ae03a70966d8b5f42ff08703d6b254
     font-family: 'BPG Glaho';
 }
 .main_section_pharagraph p{
@@ -222,8 +223,8 @@ p{
 }
 .street-article1 p,.forth_container_article p,.inga_story7-first-notebook-patern p{
     font-size: 1.3vw !important;
-
 }
+
 .street-article1 p:nth-child(2),
 .forth_container_article p:nth-child(2),
 .inga_story7-first-notebook-patern p:nth-child(2),
@@ -249,10 +250,17 @@ p{
     align-items: center;
     padding: 10% 0;
 }
- .street-article1 {
+.street-article1 ,
+.forth_container_article ,
+.inga_story7-first-notebook-patern {
     width: 50%;
     font-style: italic;
 }
+.street-article1 p:nth-child(2),
+.forth_container_article p:nth-child(2),
+.inga_story7-first-notebook-patern p:nth-child(2){
+    font-style: normal;
+ }
 .second-in_street-second-container .third_container{
     display: flex;
     justify-content: space-evenly;
@@ -487,10 +495,9 @@ p{
 }
  .inga_story7-first-notebook-patern{
     margin-top: 0 auto;
-    font-style: italic;
     padding: 1% 3%;
  }
-.inga_story7-first-notebook-patern,.inga_story7-second-notebook-patern{
+.inga_story7-first-notebook-patern  ,.inga_story7-second-notebook-patern {
     text-align: center;
     margin: auto;
     width: 50% !important;
@@ -508,7 +515,6 @@ p{
     width: 70%;
     padding-top: 6%;
     margin: 0 auto;
-    font-style: italic;
     font-family: 'MG Glaho Drunk';
 }
 .inga_story7-second-notebook-patern div:nth-child(2){
