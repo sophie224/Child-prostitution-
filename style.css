@@ -879,11 +879,11 @@ footer{
 /*loader end*/
 @media (max-width:600px){
     p{
-        font-size: 2.2vw;
+        font-size: 2.4vw;
     }
     .street-article1 p,
      .forth_container_article p,
      .inga_story7-first-notebook-patern p{
-        font-size: 1.9vw !important;
+        font-size: 2.1vw !important;
      }
 }
