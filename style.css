@@ -51,10 +51,18 @@ body{
 
 
 
-
+.title img{
+    width:100%;
+    height: 100%;
+}
 p{
     font-size: 1.5vw;
     color:white;
+    text-align: justify;
+    margin:0;
+}
+mainParagraph{
+    font-size: 2vw;
 }
 .continue-ingaStory-black_background,
 .inga_story5,
@@ -81,19 +89,28 @@ p{
 .first_section{
     position: relative;
     width: 100%;
-    margin-top: -2%;
 }
-
+.main_section{
+    background-color:#0a0a0a;
+    position: relative;
+}
 .main_section,.first_story,.third-section,.forth-section {
     position: relative;
     width: 100%;
- } 
- .main_section_images_container{
-     position: absolute;
-     top: 3%;
-     width: 100%;
- }
-
+} 
+.main_section_images_container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.main_cover{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    top: 5%;
+    margin: auto 25%;
+}
 .main_section_pharagraph > p > span{
     font-size: 1.7vw;
 }
@@ -101,31 +118,33 @@ p{
 .main_section_background img{
     width: 100%; 
 }
-.main_cover{
-    display: flex;
-    justify-content: center;
+.main_cover img{
+    width: 100%;
+    height: 100%;
 }
 .author_name{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 25%;
 }
 .author_name img{
-    width: 25%;
+    width: 35%;
     height: 100%;
 }
-.main_cover img{
-    width: 50%;
-    height: 100%;
+.second_question{
+    margin: 10% auto;
+}
+.forth_question{
+    margin-top: 10%;
 }
 .main_section_pharagraph{
     width: 55%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 3%;
+    padding: 0 0 15% 0;
     flex-direction: column;
     margin-top: 3%;
     font-family: 'BPG Glaho';
@@ -138,13 +157,14 @@ p{
     display: flex;
     justify-content: center;
     position:absolute;
-    top:-3%;
+    top:-2.5%;
 }
 .ingas_story_main_container{
     padding-top: 10%;
 }
 .inga_story_title,.first_in_street-title{
     margin: 5%;
+    width: 40%;
 }
 .ingaStory_first_text_container{
     width: 80%;
@@ -164,32 +184,37 @@ p{
 .people_image_container{
     width: 60%;
 }
-.left_side-images-inga,.middle_text-inga,.right_side-images-inga{
+.left_side-images-inga,
+.left_side-images2-inga,
+.right_side-images-inga{
+    position: absolute;
     width: 20%;
 }
-.left_side-images-inga img:nth-child(1){
-    margin-top: -30%;
-    margin-left:15%;
+.left_side-images-inga {
+    left: 2%;
+    top: 14%;
 }   
-.left_side-images-inga img:nth-child(2){
-    padding: 80% 0 0 33%;
+.left_side-images2-inga {
+    left: 2%;
+    top: 42%;
 }
-.right_side-images-inga img{
-    padding-top: 10%;
+.right_side-images-inga {
+    right: 0%;
+    top: 17%;
 }
 .three-column-section{
+    position: relative;
     display: flex;
     justify-content:space-between;
     padding: 10% 0 30% 0;
 }
 .middle_text-inga{
     height: 100%;
-    width:50%;
+    width: 50%;
     display: flex;
-    align-items: center;
-    
-    padding:2% 5%;
+    padding: 2% 0 15% 0;
     font-size: 1.2vw;
+    margin: auto;
 }
 
 .street-first-container{
@@ -225,11 +250,9 @@ p{
     font-size: 1.3vw !important;
 }
 
-.street-article1 p:nth-child(2),
-.forth_container_article p:nth-child(2),
-.inga_story7-first-notebook-patern p:nth-child(2),
-.second-article p:nth-child(2){
-    text-align: right;
+.fragment{
+    text-align: end ;
+    font-style:normal;
 }
 
 .street-article img{
@@ -248,7 +271,7 @@ p{
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10% 0;
+    padding: 0 0 10% 0;
 }
 .street-article1 ,
 .forth_container_article ,
@@ -279,14 +302,13 @@ p{
 }
 
 .mini_stickers_container{
-    padding-top: 20%;
+    padding-top: 30%;
 }
 .mini_stickers_container{
     height: 100%;
 }
 .forth_container_article{
     margin-left: 36% !important;
-
     width: 50% !Important;
     font-style: italic;
     margin: 8% auto;
@@ -294,8 +316,7 @@ p{
 .second-in_street-second-container .forth_container_article{
     width: 35%;
     position: relative;
-   
-    padding: 2% 5%;
+    padding: 2% 3%;
 }
 
 .story_about_vagzali_title{
@@ -383,15 +404,20 @@ p{
 }
 .inga_story6-title{
     width: 27%;
-    padding: 13% 0 5% 5%;
+    padding: 13% 0 0 5%;
 }
 
-.inga_story6-first-container,
 .inga_story6-second-container,
 .inga_story6-third-container{
     display: flex;
     justify-content: space-evenly;
     margin-top: 6%;
+}
+.inga_story6-first-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .inga_story6-forth-container{
     padding: 5% 0 13% 0;
@@ -404,14 +430,11 @@ p{
     padding: 2% 5%;
 }
 .inga_story6-first-image{
-    width: 100%;
-    position: absolute;
-    top: 19%;
-    display: flex;
-    justify-content: center;
+    width: 15%;
 }
 .inga_story6-first-image img{
-    margin: 0 auto;
+    width:100%;
+    height:100%;
 }
 .inga_story6-second-image{
     position: absolute;
@@ -625,7 +648,7 @@ p{
 }
 .main-title{
     width:50%;
-    padding: 10% 0 10% 5%;
+    padding: 15% 0 10% 5%;
 }
 .second_section-forth-title{
     width: 40%;
@@ -652,25 +675,42 @@ p{
     padding: 10% 0;
 }
 
-
-.second-article,.sixth-article{
+.sixth-article{
+    width: 31%;
+    margin: 5% auto;
+    padding: 2%;
+}
+.second-article{
     font-family: 'MG Glaho Drunk';
     border: solid 3px hsla(0, 95%, 35%, 1);
-    width: 50%;
+    width: 31%;
     margin: 5% auto;
     padding: 2%;
     border-style: dashed;
 }
+.sixth-article{
+    width:39% !important;
+}
+.sixth-article > div{
+    background: #d12430;
+    padding: 10%;
+}
+
+.sixth-article > div > ul >li,.sixth-article > div p{
+    color:white;
+
+}
 .second-article p, .sixth-article p{
     color: black;
 }
-.third-article  p a{
-    text-decoration: none;
+.third-article p a{
+    text-decoration: underline;
     color: white;
     font-size: 1.5vw;
+    font-weight: bold;
 }
 .sixth-article {
-    color:white;
+    color:black;
 }
 .third-article{
     margin-top: -1% !important;
@@ -708,18 +748,20 @@ p{
 .second_section-forth-title {
     margin:5%;
 }
-.chapter1,.chapter2,.chapter3{
+.chapter1,.chapter3{
     width: 30%;
     margin: 0 auto;
 }
 .chapter2{
     position: absolute;
-    top: -0.8%;
+    top: 0;
     display: flex;
-    width: 100%;
+    width: 30%;
+    margin: auto 35%;
 }
 .chapter2 img{
-    margin: 0 auto;
+    width:100%;
+    height: 100%;
 }
 .third-section-first-paragraph,
 .third-section-second-paragraph,
@@ -728,11 +770,10 @@ p{
 .forth-section-second-paragraph{
     color: white;
     width: 45%;
-    left: 40%;
-    margin: 8% auto;
+    margin: 0 auto;
+    padding: 10% 0;
 }
 .third-section-first-image,
-.third-section-second-image,
 .forth-section-first-image,
 .forth-section-second-image
 {
@@ -891,9 +932,98 @@ footer{
     p{
         font-size: 2.4vw;
     }
+    mainParagraph{
+        font-size: 3vw !important;
+    }
+    
     .street-article1 p,
-     .forth_container_article p,
-     .inga_story7-first-notebook-patern p{
+    .forth_container_article p,
+    .inga_story7-first-notebook-patern p{
         font-size: 2.1vw !important;
-     }
+    }
+    .line_decor{
+        top: -2%;
+    }
+    .middle_text-inga{
+        width:60%;
+    }
+    .right_side-images-inga{
+        top: 24%;
+    }
+    .text_middle_container{
+        width:55%;
+    }
+    .fetter{
+        top:-6%;
+    }
+    .vagzali_article,
+    .inga_story6-first-paragraph,
+    .inga_story7-first-paragraph,
+    .inga_story8-first-paragraph,
+    .inga_story8-second-paragraph,
+    .first-article,
+    .third-article, 
+    .forth-article, 
+    .fifth-article,
+    .third-section-first-paragraph, 
+    .third-section-second-paragraph, 
+    .third-section-third-paragraph, 
+    .forth-section-first-paragraph, 
+    .forth-section-second-paragraph
+    {
+        width:60%;
+    }
+    .left_side_card, .right_side_card{
+        width:15%;
+    }
+    .inga_story5-third_container img{
+        width:60%;
+    }
+    .inga_story6-second-image{
+        left: 0;
+    }
+    .inga_story6-third-image{
+        right: 2%;
+    }
+    .inga_story6-forth-image{
+        right: 5%;
+    }
+    .inga_story7-middle-image{
+        top:-2.5%;
+    }
+    .inga_story8-middle-image{
+        top:-8%;
+    }
+    .inga_story8-forth-image{
+        width:65%;
+    }
+    .second-article, .sixth-article{
+        width:50%;
+    }
+    .second_section-first-image, 
+    .second_section-second-image, 
+    .second_section-third-image{
+        width:70%;
+    }
+    footer{
+        width:45%;
+    }
+    .chapter1, .chapter3,.chapter2{
+        width:40%;
+    }
+    .chapter2{
+        margin: auto 30%; 
+    }
+    .title{
+        width:45%;
+    }
+    .story_about_vagzali_title,.main-title{
+        width: 60% !important;
+    }
+    .sixth-article{
+        width: 60% !important;
+    }
+    ul{
+        font-size: 2.5vw;
+    }
 }
