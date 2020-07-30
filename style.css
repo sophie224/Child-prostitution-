@@ -175,7 +175,7 @@ p{
 .three-column-section{
     display: flex;
     justify-content:space-between;
-    padding: 10% 0 25% 0;
+    padding: 10% 0 30% 0;
 }
 .middle_text-inga{
     height: 100%;
@@ -204,7 +204,7 @@ p{
     display: flex;
     align-items: center;
     position: absolute;
-    top: -16%;
+    top: -13%;
     width: 100%;
 
 }
