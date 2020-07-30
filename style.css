@@ -681,9 +681,12 @@ p{
 }
 
 
-.fifth-article,
-.second_section-forth-title {
+.fifth-article
+{
     margin:5% auto;
+}
+.second_section-forth-title {
+    margin:5%;
 }
 .chapter1,.chapter2,.chapter3{
     width: 30%;
