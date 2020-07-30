@@ -60,8 +60,12 @@ p{
 .continue-ingaStory-black_background,
 .inga_story5,
 .inga_story7,
-.forth-section{
+.forth-section,
+.third-section div:nth-child(2){
     background-color: #0a0a0a;
+}
+.third-section div:nth-child(2){
+    margin-top: -2%;
 }
 .continue-ingaStory-black_background{
     position: relative;
