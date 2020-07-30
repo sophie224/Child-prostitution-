@@ -102,7 +102,7 @@ p{
     justify-content: center;
     margin: 0 auto;
     padding: 3%;
-    margin-top: 11%;
+    margin-top: 8%;
     font-family: 'BPG Glaho';
 }
 .main_section_pharagraph p{
@@ -745,7 +745,7 @@ footer{
     height: 100vh;
     top: 0;
     left: 0;
-    
+    background: white;
     z-index: 1000;
 }
 .lds-roller {
@@ -765,7 +765,7 @@ footer{
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #d12430;
+  background: #d56003;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
@@ -832,6 +832,7 @@ footer{
     transform: rotate(360deg);
   }
 }
+
 
 /*loader end*/
 @media (max-width:600px){
