@@ -3,10 +3,1014 @@
 <head>
 	<title>Prostitution</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/mg-glaho-drunk/css/mg-glaho-drunk.min.css">
+	<link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/alk-tall-mtavruli/css/alk-tall-mtavruli.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: 'DejaVu Sans';
+			font-weight: normal;
+			font-style: normal;
+		}
 
+		@font-face {
+			font-family: 'DejaVu Sans';
+			src: url('./assets/fonts/DejaVuSans.woff2') format('woff2'),
+				url('./assets/fonts/DejaVuSans.woff') format('woff');
+			font-weight: normal;
+			font-style: italic;
+			font-display: swap;
+		}
+
+
+		.title img{
+			width:100%;
+			height: 100%;
+		}
+		p{
+			font-size: 1.5vw;
+			color:white;
+			text-align: justify;
+			margin:0;
+		}
+		li{
+			font-size: 1.4vw;
+		}
+		mainParagraph{
+			font-size: 2vw;
+		}
+		.continue-ingaStory-black_background,
+		.inga_story5,
+		.inga_story7,
+		.forth-section,
+		.third-section div:nth-child(2){
+			background-color: #0a0a0a;
+		}
+		.third-section div:nth-child(2){
+			margin-top: -2%;
+		}
+		.continue-ingaStory-black_background{
+			position: relative;
+		}
+		.first_story,
+		.red_container-vagzali,
+		.inga_story6,
+		.inga_story8{
+			background-color: #d12430;
+		}
+		.red_container-vagzali{
+			position: relative;
+		}
+		.first_section{
+			position: relative;
+			width: 100%;
+		}
+		.main_section{
+			background-color:#0a0a0a;
+			position: relative;
+		}
+		.main_section,.first_story,.third-section,.forth-section {
+			position: relative;
+			width: 100%;
+		} 
+		.main_section_images_container{
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.main_cover{
+			display: flex;
+			justify-content: center;
+			width: 50%;
+			position: absolute;
+			top: 5%;
+			margin: auto 25%;
+		}
+		.main_section_pharagraph > p > span{
+			font-size: 1.7vw;
+		}
+
+		.main_section_background img{
+			width: 100%; 
+		}
+		.main_cover img{
+			width: 100%;
+			height: 100%;
+		}
+		.author_name{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 25%;
+		}
+		.author_name img{
+			width: 35%;
+			height: 100%;
+		}
+		.second_question{
+			margin: 10% auto;
+		}
+		.forth_question{
+			margin-top: 10%;
+		}
+		.main_section_pharagraph{
+			width: 55%;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			padding: 0 0 15% 0;
+			flex-direction: column;
+			margin-top: 3%;
+		}
+		.main_section_pharagraph p{
+			color:#c02128;
+			text-align: center;
+		}
+		.line_decor{
+			display: flex;
+			justify-content: center;
+			position:absolute;
+			top:-2.5%;
+		}
+		.ingas_story_main_container{
+			padding-top: 10%;
+		}
+		.inga_story_title,.first_in_street-title{
+			margin: 5%;
+			width: 40%;
+		}
+		.ingaStory_first_text_container{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.inga_first_section{
+			display: flex;
+			justify-content: center;
+		}
+		.article1{
+			width: 35%;
+			display: flex;
+			align-items: center;
+			height: 100%;
+			padding: 14px 16px;
+		}
+		.people_image_container{
+			width: 60%;
+		}
+		.left_side-images-inga,
+		.left_side-images2-inga,
+		.right_side-images-inga{
+			position: absolute;
+			width: 20%;
+		}
+		.left_side-images-inga {
+			left: 2%;
+			top: 14%;
+		}   
+		.left_side-images2-inga {
+			left: 2%;
+			top: 42%;
+		}
+		.right_side-images-inga {
+			right: 0%;
+			top: 17%;
+		}
+		.three-column-section{
+			position: relative;
+			display: flex;
+			justify-content:space-between;
+			padding: 10% 0 30% 0;
+		}
+		.middle_text-inga{
+			height: 100%;
+			width: 50%;
+			display: flex;
+			padding: 2% 0 15% 0;
+			font-size: 1.2vw;
+			margin: auto;
+		}
+
+		.street-first-container{
+			display: flex;
+			width: 85%;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 auto;
+
+		}
+		.street-first-container div:nth-child(1){
+			display: flex;
+			justify-content: center;
+		}
+		.street-article{
+			display: flex;
+			align-items: center;
+			position: absolute;
+			top: -13%;
+			width: 100%;
+
+		}
+		.street-article1,.forth_container_article,.inga_story7-first-notebook-patern {
+			color: white;
+			border: solid 5px hsla(0, 95%, 35%, 1);
+			border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+			margin: 0 auto;
+			padding:2%;
+			font-family: "MG Glaho Drunk", sans-serif;
+
+		}
+		.street-article1 p,.forth_container_article p,.inga_story7-first-notebook-patern p{
+			font-size: 1.3vw !important;
+		}
+
+		.fragment{
+			text-align: end ;
+			font-style:normal;
+		}
+
+		.street-article img{
+			margin: 0 auto;
+		}
+
+		.second-in_street{
+			padding-top: 22%;
+		}
+		.second-in_street-second-container{
+			padding: 0 0 10% 0;
+		}
+		.second-in_street-second-container .second_container{
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 0 0 10% 0;
+		}
+		.street-article1 ,
+		.forth_container_article ,
+		.inga_story7-first-notebook-patern {
+			width: 50%;
+			font-style: italic;
+		}
+		.street-article1 p:nth-child(2),
+		.forth_container_article p:nth-child(2),
+		.inga_story7-first-notebook-patern p:nth-child(2){
+			font-style: normal;
+		}
+		.second-in_street-second-container .third_container{
+			display: flex;
+			justify-content: space-evenly;
+			width: 100%;
+		}
+		.text_middle_container{
+			width: 45%;
+			display: flex;
+			align-items: center;
+			height: 100%;
+			padding: 2% 5%;
+		}
+		.keds_left-container,.mini_stickers_container
+		{
+			width:15%;
+		}
+
+		.mini_stickers_container{
+			padding-top: 30%;
+		}
+		.mini_stickers_container{
+			height: 100%;
+		}
+		.forth_container_article{
+			margin-left: 36% !important;
+			width: 50% !Important;
+			font-style: italic;
+			margin: 8% auto;
+		}
+		.second-in_street-second-container .forth_container_article{
+			width: 35%;
+			position: relative;
+			padding: 2% 3%;
+		}
+
+		.story_about_vagzali_title{
+			padding: 23% 0 5% 4%;
+			width: 50%;
+		}
+		.vagzali_article{
+			width: 45%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+			margin: 0 auto;
+		}
+		.vagzali_second_container{
+			display: flex;
+			justify-content: space-between;
+			height: 100%;
+			width: 100%;
+		}
+		.left_side_card, .right_side_card{
+			position: absolute;
+			width: 17%;
+		}
+		.left_side_card{
+			left: 2%;
+			top: 32%;
+		}
+		.right_side_card{
+			right: 2%;
+			top: 52%;
+		}
+		.vagzali_third_container{
+			display: flex;
+			justify-content: space-evenly;
+			top: 50%;
+			padding: 10% 0 20% 0;
+		}
+		.vagzali_third_article{
+			width: 27%;
+			display: flex;
+			align-items: center;
+			
+			padding: 2% 5%;
+			
+		}
+		.girl_in_car{
+			width: 40%;
+		} 
+
+		.fetter{
+			position: absolute;
+			width: 17%;
+			top: -10%;
+			left: 10%;
+		}
+		.inga_story5,.inga_story6-main-container{
+			position: relative;
+		}
+		.inga_story7-first-container,.inga_story6-main-container{
+			padding: 0 0 15% 0;
+		}
+
+		.inga_story5_article{
+			width: 43%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+			margin-top: 6%;
+			
+		}
+		.inga_story5-second_container{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+
+		.inga_story5-third_container{
+			width: 100%;
+			display: flex;
+			padding: 2% 0;
+			justify-content: center;
+			align-items: center;
+		}
+		.inga_story6-title{
+			width: 27%;
+			padding: 13% 0 0 5%;
+		}
+
+		.inga_story6-second-container,
+		.inga_story6-third-container{
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 6%;
+		}
+		.inga_story6-first-container{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.inga_story6-forth-container{
+			padding: 5% 0 13% 0;
+		}
+		.inga_story6-first-paragraph{
+			width: 45%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+		}
+		.inga_story6-first-image{
+			width: 15%;
+		}
+		.inga_story6-first-image img{
+			width:100%;
+			height:100%;
+		}
+		.inga_story6-second-image{
+			position: absolute;
+			width: 21%;
+			left: 4%;
+			top: 50%;
+		}
+		.inga_story6-second-paragraph{
+			width: 55%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+		}
+		.inga_story6-third-paragraph{
+			width: 55%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+			margin-top: 3%;
+		}
+
+		.inga_story6-third-image{
+			position: absolute;
+			width: 16%;
+			bottom: 38%;
+			right: 6%;
+		}
+		.inga_story6-forth-image{
+			position: absolute;
+			width: 12%;
+			bottom: 15%;
+			right: 12%;
+		}
+		.inga_story6-forth-paragraph{
+			width: 80%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 4% 2%;
+			margin: 0 auto;
+		}
+		.inga_story7-main-container{
+			padding: 0 0 25% 0;
+		}
+		.inga_story8,.inga_story7-main-container{
+			position: relative;
+		}
+		/* .inga_story8-main-container{
+			position: absolute;
+			top: 0;
+		} */
+		.inga_story7-middle-image{
+			position: absolute;
+			top: -3.5%;
+			width: 100%;
+			left: 35%;
+		}
+
+		.inga_story7-middle-image{
+			width:30%;
+			margin: auto;
+		}
+		.inga_story8-middle-image{
+			top: -13%;
+			width: 100%;
+			position: absolute;
+		}
+		.inga_story8-middle-image img{
+			display: flex;
+			margin: 0 auto;
+		}
+		.inga_story8-title{
+			width: 40%;
+			padding: 30% 0 5% 6%;
+		}
+		.inga_story7-title{
+			width: 45%;
+			padding: 15% 0 10% 6%;
+		}
+		.inga_story7-first-notebook-patern{
+			margin-top: 0 auto;
+			padding: 1% 3%;
+		}
+		.inga_story7-first-notebook-patern  ,.inga_story7-second-notebook-patern {
+			text-align: center;
+			margin: auto;
+			width: 50% !important;
+			font-size: 1.3vw;
+		}
+		.inga_story7-second-notebook-patern{
+			width: 100%;
+			padding-top: 15%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+		.inga_story8-third-notebook-patern{
+			width: 70%;
+			padding-top: 6%;
+			margin: 0 auto;
+			font-family: "MG Glaho Drunk", sans-serif;
+
+		}
+		.inga_story7-second-notebook-patern div:nth-child(2){
+			width:60%;
+		}
+		.inga_story8-first-container{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.inga_story7-first-container{
+			position: relative;
+			margin-top: 5%;
+			display: flex;
+			justify-content: center;
+		}
+		.inga_story7-second-container
+		{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 10%;
+		}
+		.inga_story7-first-image{
+			width: 28%;
+			margin: 7% auto;
+		}
+		.inga_story7-first-paragraph{
+			width: 45%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		.inga_story7-second-paragraph{
+			width: 55%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+		}
+		.inga_story7-second-image{
+			width: 15%;
+			left: 4%;
+			top: 15%;
+		}
+		.inga_story7-third-image{
+			width:10%;
+			right: 5%;
+			bottom: 15%;
+		}
+		.inga_story7-second-image,
+		.inga_story7-third-image{
+			position: absolute;
+		}
+		.inga_story8-first-image,.inga_story8-second-image{
+			width: 13%;
+			display: flex;
+			flex-direction: column;
+		}
+		.inga_story8-first-image{
+			
+			justify-content: space-around;
+		}
+		.inga_story8-second-image{
+			justify-content: flex-end;
+			margin-bottom: 11%;
+		}
+		.inga_story8-first-paragraph{
+			width: 45%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 2%;
+		}
+		.inga_story8-second-paragraph{
+			width: 45%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 2% 5%;
+			margin: auto;
+		}
+		.inga_story8-third-image{
+			width: 40%;
+			margin: 0 auto;
+		}
+		.inga_story8-forth-image{
+			width: 45%;
+			margin: auto;
+		}
+
+
+		/*part2*/
+
+
+		.second_section-second-title,
+		.second_section-third-title
+		{   
+		
+			width: 40%;
+			margin-left: 4%;
+		}
+		.second_section{
+			position: relative;
+		}
+		.second_section-third-title{
+			padding: 8% 0 0 0;
+		}
+		.main-title{
+			width:50%;
+			padding: 15% 0 10% 5%;
+		}
+		.second_section-forth-title{
+			width: 40%;
+		}
+		.third-section-first-title{
+			width: 30%;
+			padding: 5%;
+		}
+		.first-article{
+			width: 45%;
+			margin: 0 auto;
+		}
+		.redBack{
+			background: #d12430;
+			padding: 2% 5%;
+			color:white
+		}
+		.second-article
+		{   color:black;
+			position: relative;
+			text-align: center;
+			margin: 0 auto;
+			width: 100%;
+			padding: 10% 0;
+			font-family: "ALK Tall Mtavruli", sans-serif;
+		}
+
+		.sixth-article{
+			width: 31%;
+			margin: 5% auto;
+			padding: 2%;
+			font-family: "ALK Tall Mtavruli", sans-serif;
+		}
+		.second-article{
+			border: solid 3px hsla(0, 95%, 35%, 1);
+			width: 22%;
+			margin: 5% auto;
+			padding: 2%;
+			border-style: dashed;
+		}
+		.sixth-article{
+			width:39% !important;
+		}
+		.sixth-article > div{
+			background: #d12430;
+			padding: 10%;
+		}
+
+		.sixth-article > div > ul >li,.sixth-article > div p{
+			color:white;
+
+		}
+		.second-article p, .sixth-article p{
+			color: black;
+		}
+		.third-article p a{
+			text-decoration: underline;
+			color: white;
+			font-size: 1.5vw;
+			font-weight: bold;
+		}
+		.sixth-article {
+			color:black;
+		}
+		.third-article{
+			margin-top: -1% !important;
+		}
+		.third-article, 
+		.forth-article,
+		.fifth-article{
+			width: 45%;
+			margin: auto;
+		}
+		.second_section-first-image{
+			margin-top: 5% !important;
+		}
+		.second_section-first-image,
+		.second_section-second-image,
+		.second_section-third-image{
+			width: 55%;
+			margin: auto;
+		}
+		.second_section-second-title{
+			margin-top: 8%;
+			margin-bottom: 6%;
+		}
+		.blackBack{
+			background-color:black;
+			padding: 2% 5%;
+			color:white;
+		}
+
+
+		.fifth-article
+		{
+			margin:5% auto;
+		}
+		.second_section-forth-title {
+			margin:5%;
+		}
+		.chapter1,.chapter3{
+			width: 30%;
+			margin: 0 auto;
+		}
+		.chapter2{
+			position: absolute;
+			top: 0;
+			display: flex;
+			width: 30%;
+			margin: auto 35%;
+		}
+		.chapter2 img{
+			width:100%;
+			height: 100%;
+		}
+		.third-section-first-paragraph,
+		.third-section-second-paragraph,
+		.third-section-third-paragraph,
+		.forth-section-first-paragraph,
+		.forth-section-second-paragraph{
+			color: white;
+			width: 45%;
+			margin: 0 auto;
+			padding: 10% 0;
+		}
+		.third-section-first-image,
+		.forth-section-first-image,
+		.forth-section-second-image
+		{
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		footer{
+			width: 35%;
+			margin: 0 auto;
+		}
+
+
+
+		/*scroll to top*/
+
+
+		#scroll {
+			position:fixed;
+			right:10px;
+			bottom:10px;
+			cursor:pointer;
+			width:50px;
+			height:50px;
+			background-color: #d12430;
+			color: #fefeff;
+			text-indent:-9999px;
+			display:none;
+			-webkit-border-radius:60px;
+			-moz-border-radius:60px;
+			border-radius:60px
+		}
+		#scroll span {
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-left:-8px;
+			margin-top:-12px;
+			height:0;
+			width:0;
+			border:8px solid transparent;
+			border-bottom-color:#ffffff;
+		}
+		#scroll:hover {
+			background-color:#e74c3c;
+			opacity:1;filter:"alpha(opacity=100)";
+			-ms-filter:"alpha(opacity=100)";
+		}
+
+
+		/*scroll to top end*/
+
+
+
+		/*loader*/
+		.loader-holder{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			background: white;
+			z-index: 1000;
+		}
+		.lds-roller {
+		display: inline-block;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		}
+		.lds-roller div {
+		animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+		transform-origin: 40px 40px;
+		}
+		.lds-roller div:after {
+		content: " ";
+		display: block;
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background: #d56003;
+		margin: -4px 0 0 -4px;
+		}
+		.lds-roller div:nth-child(1) {
+		animation-delay: -0.036s;
+		}
+		.lds-roller div:nth-child(1):after {
+		top: 63px;
+		left: 63px;
+		}
+		.lds-roller div:nth-child(2) {
+		animation-delay: -0.072s;
+		}
+		.lds-roller div:nth-child(2):after {
+		top: 68px;
+		left: 56px;
+		}
+		.lds-roller div:nth-child(3) {
+		animation-delay: -0.108s;
+		}
+		.lds-roller div:nth-child(3):after {
+		top: 71px;
+		left: 48px;
+		}
+		.lds-roller div:nth-child(4) {
+		animation-delay: -0.144s;
+		}
+		.lds-roller div:nth-child(4):after {
+		top: 72px;
+		left: 40px;
+		}
+		.lds-roller div:nth-child(5) {
+		animation-delay: -0.18s;
+		}
+		.lds-roller div:nth-child(5):after {
+		top: 71px;
+		left: 32px;
+		}
+		.lds-roller div:nth-child(6) {
+		animation-delay: -0.216s;
+		}
+		.lds-roller div:nth-child(6):after {
+		top: 68px;
+		left: 24px;
+		}
+		.lds-roller div:nth-child(7) {
+		animation-delay: -0.252s;
+		}
+		.lds-roller div:nth-child(7):after {
+		top: 63px;
+		left: 17px;
+		}
+		.lds-roller div:nth-child(8) {
+		animation-delay: -0.288s;
+		}
+		.lds-roller div:nth-child(8):after {
+		top: 56px;
+		left: 12px;
+		}
+		@keyframes lds-roller {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+		}
+
+
+		/*loader end*/
+		@media (max-width:600px){
+			p{
+				font-size: 2.4vw;
+			}
+			mainParagraph{
+				font-size: 3vw !important;
+			}
+			
+			.street-article1 p,
+			.forth_container_article p,
+			.inga_story7-first-notebook-patern p{
+				font-size: 2.1vw !important;
+			}
+			.line_decor{
+				top: -2%;
+			}
+			.middle_text-inga{
+				width:60%;
+			}
+			.right_side-images-inga{
+				top: 24%;
+			}
+			.text_middle_container{
+				width:55%;
+			}
+			.fetter{
+				top:-6%;
+			}
+			.vagzali_article,
+			.inga_story6-first-paragraph,
+			.inga_story7-first-paragraph,
+			.inga_story8-first-paragraph,
+			.inga_story8-second-paragraph,
+			.first-article,
+			.third-article, 
+			.forth-article, 
+			.fifth-article,
+			.third-section-first-paragraph, 
+			.third-section-second-paragraph, 
+			.third-section-third-paragraph, 
+			.forth-section-first-paragraph, 
+			.forth-section-second-paragraph
+			{
+				width:60%;
+			}
+			.left_side_card, .right_side_card{
+				width:15%;
+			}
+			.inga_story5-third_container img{
+				width:60%;
+			}
+			.inga_story6-second-image{
+				left: 0;
+			}
+			.inga_story6-third-image{
+				right: 2%;
+			}
+			.inga_story6-forth-image{
+				right: 5%;
+			}
+			.inga_story7-middle-image{
+				top:-2.5%;
+			}
+			.inga_story8-middle-image{
+				top:-8%;
+			}
+			.inga_story8-forth-image{
+				width:65%;
+			}
+			.second-article, .sixth-article{
+				width:37%;
+			}
+			.second_section-first-image, 
+			.second_section-second-image, 
+			.second_section-third-image{
+				width:70%;
+			}
+			footer{
+				width:45%;
+			}
+			.chapter1, .chapter3,.chapter2{
+				width:40%;
+			}
+			.chapter2{
+				margin: auto 30%; 
+			}
+			.title{
+				width:45%;
+			}
+			.story_about_vagzali_title,.main-title{
+				width: 60% !important;
+			}
+			.sixth-article{
+				width: 60% !important;
+			}
+			/* ul{
+				font-size: 2.5vw;
+			} */
+			li{
+				font-size: 2.4vw;
+			}
+		}
+
+	</style>
 </head>
 <body>
 	<div class="loader-holder">
@@ -14,14 +1018,14 @@
     </div>
 	
 	<div class="main_section" >
-		<img   width="100%" src="./assets/img/bacgroundBlack-white.png" />
+		<img   width="100%" src="https://gdb.rferl.org/39ffd097-3a43-4476-b375-ec9d4aff2cdb.png?fbclid=IwAR0q36rqI-i4fq8aDiy8uOa906r7CANcXCptIs47MOJB0pAzjEJY5N4t1vc" />
 		<div class="main_cover"  id="scene">
-			<img data-depth="0.18" src="./assets/img/cover.png"/>
+			<img data-depth="0.18" src="https://gdb.rferl.org/CED57954-2E07-4DAA-9E23-4BB4FF73AB53.png"/>
 		</div>
 		<div class="main_section_images_container">
 			
 			<div class="author_name">
-				<img src="./assets/img/1.png"/>
+				<img src="https://gdb.rferl.org/FF8D0D93-D1BC-473A-80C7-5EFF091D1DDD.png"/>
 			</div>
 			<div class="main_section_pharagraph article">
 				<p class="first_question"> 
@@ -55,30 +1059,30 @@
     <section class="first_section" id="ingasStory">
 		<div class="first_story">
 			<div class="line_decor">
-				<img width="80%" src="./assets/img/lineWhite.png"/>
+				<img width="80%" src="https://gdb.rferl.org/9B56146D-EB30-4DEB-995A-0E71DA62391C.png"/>
 			</div>
 			<div class="ingas_story_main_container">
 				<div class="chapter1">
-					<img width="100%" src="./assets/img/chapter1.png"/>
+					<img width="100%" src="https://gdb.rferl.org/B727D945-9E76-4411-9D7B-9C486185A9B3.png"/>
 				</div>
 				
 				<div class="inga_story_title title">
-					<img  src="./assets/img/ingasStory.png" />
+					<img  src="https://gdb.rferl.org/1DFAAF3A-6088-42E7-BC2E-6FC668B40B14.png" />
 
 				</div>
 				<div class="ingaStory_first_text_container" >
 					<div class="inga_first_section" >
 						<div class="people_image_container" >
-							<img  width="100%" src="./assets/img/2.png"/>
+							<img  width="100%" src="https://gdb.rferl.org/2090C0ED-55E2-441D-B1F9-07FB5F746885.png"/>
 						</div>
 					</div>
 				</div>
 				<div class="three-column-section">
 					<div class="left_side-images-inga">
-						<img  width="80%" src="./assets/img/3.png"/>
+						<img  width="80%" src="https://gdb.rferl.org/93F6A7D5-25BC-4814-AE29-165C2FF49EA6.png"/>
 					</div>
 					<div class="left_side-images2-inga">
-						<img  width="50%" src="./assets/img/4.png"/>
+						<img  width="50%" src="https://gdb.rferl.org/ED7A81D4-807B-428D-AD0D-EBA4F74B5C64.png"/>
 					</div>
 					<div class="middle_text-inga">
 						<p>	„თბილისი ცენტრალის“ უკანა მხარეს ავედი. ბაქანს გავცდი, ლიანდაგებს გავუყევი და ნაძვებში შევედი. ბინდდებოდა, როცა  უცხო კაცების ჯგუფი შევნიშნე, ჩემკენ მოდიოდნენ. ჩქარ-ჩქარა გადავყლაპე საცხობში ნაყიდი ხაჭაპური, მათთან მივედი და  სიგარეტი ვთხოვე. ასე გავიცანი „ძევკები“.
@@ -94,7 +1098,7 @@
 						</p>
 					</div>
 					<div class="right_side-images-inga">
-						<img width="70%" src="./assets/img/5.png"/>
+						<img width="70%" src="https://gdb.rferl.org/7D1F36DE-F53A-47E8-8BE2-0E119DE672D0.png"/>
 					</div>
 				</div>
 			</div>
@@ -103,13 +1107,13 @@
 
 		<div class="continue-ingaStory-black_background">
 			<div class="street-article">
-				<img width="65%" src="./assets/img/6.png"/>
+				<img width="65%" src="https://gdb.rferl.org/32F08517-B624-4F90-8E36-D7380C49CE62.png"/>
 			</div>
 
 
 			<div class="second-in_street">
 				<div class="first_in_street-title title">
-					<img src="./assets/img/firstInstreet.png"/>
+					<img src="https://gdb.rferl.org/E30055D4-67A5-43F2-B0B1-CCB8C3601174.png"/>
 				</div>
 			</div>
 
@@ -121,16 +1125,16 @@
 						<p class="fragment">ფრაგმენტი ინგას დღიურიდან</p>
 					</div>
 					<div style="width: 25%;">
-						<img width="100%" src="./assets/img/7.png"/>
+						<img width="100%" src="https://gdb.rferl.org/42F44D3B-8421-4CDE-90C3-065861332B33.png"/>
 					</div>
 				</div>
 
 				<div class="third_container">
 					<div class="keds_left-container">
-						<img width="100%" src="./assets/img/8.png"/>
+						<img width="100%" src="https://gdb.rferl.org/9392E1D8-FE9D-4BC7-9944-24BA84B81A85.png"/>
 					</div>
 					<div class="text_middle_container">
-						<p>სახლიდან რომ წამოვედი, „მეტაჩკედ“ მოვეწყვე, ვაგზალზე. სხვის ბარგს დავათრევდი და დღეში-15-18 ლარს ვშოულობდი. ეს სიგარეტის და საჭმლის ფულია. ძალიან იშვიათად, დღიური ბინის ქირისაც. ერთხელ 20 ლარიანი ჩინური კედებიც ვიყიდე. ისე მიხაროდა!
+						<p>სახლიდან რომ წამოვედი, „მეტაჩკედ“ მოვეწყვე, ვაგზალზე. სხვის ბარგს დავათრევდი და დღეში 15-18 ლარს ვშოულობდი. ეს სიგარეტის და საჭმლის ფულია. ძალიან იშვიათად, დღიური ბინის ქირისაც. ერთხელ 20-ლარიანი ჩინური კედებიც ვიყიდე. ისე მიხაროდა!
 							<br><br>
 							მაგრამ ამ ფულით ვერც მკერდის ოპერაციას გავიკეთებდი და ვერც ვერაფერი, პარიკიც კი არ მომდიოდა. ისევ ბიჭივით მეცვა. ვფიქრობდი, თუ მაინც ბიჭი უნდა ვყოფილიყო, მაშინ რატომ წამოვედი სახლიდან? რატომ ვეჩხუბე დედას? რა მინდოდა ქუჩაში, ამ სიბინძურეში? ხმა რომ ამომეღო და ჩემთვის ოდნავ ქალური ნიშანი შეემჩნიათ, იმ „ტაჩკას“ თავზე გადამაღუნავდნენ - ვაგზალზე მუშაობას და მოქცევას თავისი წესები აქვს. 
 							<br><br>
@@ -140,7 +1144,7 @@
 							</p>
 					</div>
 					<div class="mini_stickers_container">
-						<img width="100%" src="./assets/img/9.png"/>
+						<img width="100%" src="https://gdb.rferl.org/6BFEA03F-1663-4835-BBF2-FAEAB10B9FAE.png"/>
 					</div>
 				</div>
 				
@@ -156,45 +1160,45 @@
 
 		<div class="red_container-vagzali">
 			<div class="fetter">
-				<img width="100%" src="./assets/img/13.png">
+				<img width="100%" src="https://gdb.rferl.org/D0FFB32E-AA2D-44E9-9967-D70D537EDE77.png">
 			</div>
 			<div class="story_about_vagzali_title title" >
-				<img  src="./assets/img/vagzali.png"/>
+				<img  src="https://gdb.rferl.org/DEA346A5-D373-41E4-AFEE-1497386B2EED.png"/>
 			</div>
 			<div class="left_side_card">
-				<img width="100%" src="./assets/img/10.png"/>
+				<img width="100%" src="https://gdb.rferl.org/1507B35B-2A93-4E2D-881E-259B919796B2.png"/>
 			</div>
 			<div class="right_side_card">
-				<img width="100%" src="./assets/img/11.png"/>
+				<img width="100%" src="https://gdb.rferl.org/B841CCFA-CE14-4A7D-B42F-A7BA2BCE8818.png"/>
 			</div>
 			<div class="vagzali_second_container">
 				<div class="vagzali_article">
 					<p>ინგას ჩვევად ექცა, ურიკის თრევას რომ მორჩებოდა, ნაძვებთან ადიოდა.  
 						<br> <br>
-						იქ „ძევკები“ თავს დაღამებისთანავე იყრიდნენ და ხეებს შორის იყვნენ გაფანტულები. მოდიოდნენ „ვალიკები“ და ეუბნებოდნენ, სახლი თუ არ გაქვს, წამო, ღამეს ჩემთან გაგათევინებო, ვალდებული არ ხარ სექსი გვქონდეს, უბრალოდ მოგეფერებიო. ინგაც მიჰყვებოდა. ტექსტის ორივე მხარეს ვალეტები
+						იქ „ძევკები“ თავს დაღამებისთანავე იყრიდნენ და ხეებს შორის იყვნენ გაფანტულები. მოდიოდნენ „ვალიკები“ და ეუბნებოდნენ, სახლი თუ არ გაქვს, წამო, ღამეს ჩემთან გაგათევინებო, ვალდებული არ ხარ სექსი გვქონდეს, უბრალოდ მოგეფერებიო. ინგაც მიჰყვებოდა. 
 						<br><br>
 						ყველას  ერთი პირობა  ჰქონდა - თუ ინგა მათ სადმე შემთხვევით გადაეყრებოდა, „კლიენტი“ არ უნდა ეცნო. უნდა დაყრუებულიყო და დაბრმავებულიყო.
 						<br> <br>
 						უფრო ხშირად მაშინ მიჰყვებოდა უცნობებს, როცა წვიმდა.  
 						<br> <br>
-						ზოგი ბინას იქვე, სადგურის მოედანზე ქირაობდა, 20-25 ლარად - ოთახს. ზოგს სადღაც აგარაკზე მიჰყავდა. ქალაქს რომ გასცდებოდნენ ხოლმე, ინგას გულისცემა მატულობდა, მაგრამ ნელ-ნელა ეს შიშიც დაძლია. ამ საქმეში ფულს არავინ სთავაზობდა. შეთანხმება ასეთი იყო: მე გთავაზობ დასარჩენს, შენ მომეცი სხეული. ინგა მანქანაში უზის კაცს და ფანჯარაში იყურება ცოტა შეშინებული (ეს ალბათ დიდი ილუსტრაცია უდნ აიყოს)
+						ზოგი ბინას იქვე, სადგურის მოედანზე ქირაობდა, 20-25 ლარად - ოთახს. ზოგს სადღაც აგარაკზე მიჰყავდა. ქალაქს რომ გასცდებოდნენ ხოლმე, ინგას გულისცემა მატულობდა, მაგრამ ნელ-ნელა ეს შიშიც დაძლია. ამ საქმეში ფულს არავინ სთავაზობდა. შეთანხმება ასეთი იყო: მე გთავაზობ დასარჩენს, შენ მომეცი სხეული. ინგა მანქანაში უზის კაცს და ფანჯარაში იყურება ცოტა შეშინებული.
 						<br><br>
 						ძირითადად 30-დან 50 წლამდე კაცები მიდიოდნენ. 
 						<br><br>
 						გამოცდილი „ძევკები“ ინგას აგულიანებდნენ, შენხელა რომ ვიყო, რას არ მივაღწევდიო. მიდი, გამოიყენე ეგ შენი ახალგაზრდობაო.
 						<br> <br>
-						როცა ქალაქს გასცდებოდნენ ხოლმე და ყველაფერი სიბნელეში იძირებოდა, კითხვებსაც მაშინ სვამდა - რატომ ვაკეთებ ამას? იმიტომ, რომ გადარჩე და ხვალ ცოცხალი იყო, თვითონვე პასუხებდა და ეს პასუხი ყოფნიდა იმისთვის, მეორე დღესაც იგივე ეკეთებინა.  
+						როცა ქალაქს გასცდებოდნენ ხოლმე და ყველაფერი სიბნელეში იძირებოდა, კითხვებსაც მაშინ სვამდა - რატომ ვაკეთებ ამას? იმიტომ, რომ გადარჩე და ხვალ ცოცხალი იყო, თვითონვე პასუხობდა და ეს პასუხი ყოფნიდა იმისთვის, მეორე დღესაც იგივე ეკეთებინა.  
 						<br><br>
-						ნელ-ნელა იმასაც მიეჩვია, რომ მასთან ურთიერთობაში ვიღაც აგრესიულიც გამოერეოდა ხოლმე. როგორც ის, ბორკილებით რომ დააბა სექსის დროს. მერე ისევ „ძევკებმა“ მოახსენეს, ეგო, პოლიციაში მუშაობს და ფრთხილადო. პატარა ნახატი: ბორკილები, პოლიციელის ქუდიც შეიძლება
+						ნელ-ნელა იმასაც მიეჩვია, რომ მასთან ურთიერთობაში ვიღაც აგრესიულიც გამოერეოდა ხოლმე. როგორც ის, ბორკილებით რომ დააბა სექსის დროს. მერე ისევ „ძევკებმა“ მოახსენეს, ეგო, პოლიციაში მუშაობს და ფრთხილადო.
 						<br><br>
-						იქ ყველამ ყველაფერი იცოდა. მაგრამ ერთხელ მაინც დაავიწყდათ ეთქვათ  რომ ის კაცი, რომელსაც ინგა ერთ დღეს სახლში გაყვა, აივ/შიდსის მატარებელი იყო.
+						იქ ყველამ ყველაფერი იცოდა. მაგრამ ერთხელ მაინც დაავიწყდათ ეთქვათ ,რომ ის კაცი, რომელსაც ინგა ერთ დღეს სახლში გაჰყვა, აივ/შიდსის მატარებელი იყო.
 						<br><br>
-						იმ ღამიდან დაახლოებით  ერთ წელში ინგას ანალიზებმაც აჩვენა, რომ აივდადებითი იყო. 
+						იმ ღამიდან, დაახლოებით,  ერთ წელში, ინგას ანალიზებმაც აჩვენა, რომ აივდადებითი იყო. 
 					
 				</div>
 			</div>
 			<div class="inga_story5-third_container">
-				<img width="50%" src="./assets/img/14.png"/>
+				<img width="50%" src="https://gdb.rferl.org/7FCBEAD6-29B6-493B-85D1-78952AAFEA64.png"/>
 			</div>
 		
 		</div>
@@ -204,13 +1208,13 @@
 		<div class="inga_story6">
 			<div class="inga_story6-main-container">
 				<div class="inga_story6-title title">
-					<img  src="./assets/img/momTitle.png"/>
+					<img  src="https://gdb.rferl.org/B1AF0ED4-23F5-46D7-872F-CBDB6D90B548.png"/>
 				</div>
 				
 
 				<div class="inga_story6-first-container">
 					<div class="inga_story6-first-image">
-						<img  src="./assets/img/15.png"/>
+						<img  src="https://gdb.rferl.org/C365E5A0-BF95-41F5-81D2-46F6E9ACE882.png"/>
 					</div>
 					<div class="inga_story6-first-paragraph">
 						<p>
@@ -218,9 +1222,9 @@
 							<br><br>
 							სახურავი ჰქონდა, მეტი არაფერი. არც დედა, არც საჭმელი, არც სამსახური. 
 							<br><br>
-							ოქტომბრის დასაწყისში, მუხიანის აგარაკებზე ავიდა. იმედი ჰქონდა, ეზოებში ხილი იქნებოდა შემორჩენილი. სკოლის ჩანთა წაიღო და მართლა მოაგროვა რაც იყო ხეებზე შერჩენილი. კარალიოკი, ვაშლი. ნოემბერში ხილიც მოილია და ჯართის შეგროვება და ჩაბარება დაიწყო. 29 ნოემბრამდე ასე გაძლო.
+							ოქტომბრის დასაწყისში, მუხიანის აგარაკებზე ავიდა. იმედი ჰქონდა, ეზოებში ხილი იქნებოდა შემორჩენილი. სკოლის ჩანთა წაიღო და მართლა მოაგროვა  ხეებზე შერჩენილი  კარალიოკი, ვაშლი. ნოემბერში ხილიც მოილია და ჯართის შეგროვება და ჩაბარება დაიწყო. 29 ნოემბრამდე ასე გაძლო.
 							<br><br>
-							ერთ დღეს, ზურგზე მოკიდებული მოგროვებული ჯართით ერთ-ერთ ჩამბარებელ პუნქტს მიადგა, მაგრამ მეპატრონემ უთხრა, აღარ ვიბარებ, ძალიან გაიაფდა, აღარ მიღირსო. სხვაგან რომ წაეღო, კიდევ შვიდი კილომეტრი უნდა გაევლო ფეხით. იქვე ჩამოჯდა და ატირდა.
+							ერთ დღეს, ზურგზე მოკიდებული,მოგროვებული ჯართით ერთ-ერთ ჩამბარებელ პუნქტს მიადგა, მაგრამ მეპატრონემ უთხრა, აღარ ვიბარებ, ძალიან გაიაფდა, აღარ მიღირსო. სხვაგან რომ წაეღო, კიდევ შვიდი კილომეტრი უნდა გაევლო ფეხით. იქვე ჩამოჯდა და ატირდა.
 							<br><br>
 							ჯართის ჩამბარებელი პუნქტის მფლობელმა თავისი  შვილის სამშენებლო მაღაზიაში მუშაობის დაწყება შესთავაზა. 
 							<br><br>
@@ -231,13 +1235,13 @@
 					</div>
 				</div>
 				<div class="inga_story6-second-image">
-					<img width="100%" src="./assets/img/16.png" />
+					<img width="100%" src="https://gdb.rferl.org/60D4C204-7D87-4C8A-AA6B-6D08AE197D0A.png" />
 				</div>
 				<div class="inga_story6-third-image">
-					<img width="100%" src="./assets/img/29.png"/>
+					<img width="100%" src="https://gdb.rferl.org/a76aedcc-c57b-4a6a-b1f9-8db0a035cd69.png?fbclid=IwAR38WWnCX4GzWqevcxjGeIibxxsMgLs-kz9bZYMNdtgw5HIDKKZ2cD2Dh7I/>
 				</div>
 				<div class="inga_story6-forth-image">
-					<img width="100%" src="./assets/img/28.png"/>
+					<img width="100%" src="https://gdb.rferl.org/99738120-69E9-4905-859A-3ECDEE88ABF2.png"/>
 				</div>
 			</div>
 		</div>
@@ -246,10 +1250,10 @@
 		<div class="inga_story7">
 			<div class="inga_story7-main-container">
 				<div class="inga_story7-middle-image">
-					<img width="100%" src="./assets/img/18.png" />
+					<img width="100%" src="https://gdb.rferl.org/5FA80936-1A42-44B8-8D87-AB3EF9727D9E.png" />
 				</div>
 				<div class="inga_story7-title title">
-					<img  src="./assets/img/circus.png"/>
+					<img  src="https://gdb.rferl.org/69116C52-E846-403C-87A7-43B7443D6E74.png"/>
 				</div>
 				<div class="inga_story7-first-notebook-patern">
 					<p> 
@@ -266,21 +1270,21 @@
 					<p class="fragment">ფრაგმენტი ინგას დღიურიდან</p>
 				</div>
 				<div class="inga_story7-first-image">
-					<img width="100%" src="./assets/img/19.png"/>
+					<img width="100%" src="https://gdb.rferl.org/DD1A3BC3-1163-4EF5-8D6B-1D653FA7CF80.png"/>
 				</div>
 				<div class="inga_story7-first-container">
 					<div class="inga_story7-second-image">
-						<img width="100%" src="./assets/img/20.png"/>
+						<img width="100%" src="https://gdb.rferl.org/F10E2531-827F-4D18-BD1A-03275BE460EA.png"/>
 					</div>
 					<div class="inga_story7-third-image">
-						<img width="100%" src="./assets/img/21.png"/>
+						<img width="100%" src="https://gdb.rferl.org/601D600B-AA0A-4E61-852A-315B3AEC9E18.png"/>
 					</div>
 					<div class="inga_story7-first-paragraph">
 						
 						<p>
 							პირველად რომ მივიდა ტრანსების „პლეშკაზე“, გადატეხილი ბოთლის რტყმით და თმებში 
 							წვდომით ისეთ ჩხუბს შეესწრო, შეეშინდა და იქაურობას მალევე გაეცალა. რომც მოენდომებინა, 
-							იქ ასე ადვილად არც არავინ დააყენებდა. ყველა ადგილი მონიოშნული იყო. გმირთა მოედნისკენ 
+							იქ ასე ადვილად არც არავინ დააყენებდა. ყველა ადგილი მონიშნული იყო. გმირთა მოედნისკენ 
 							ჩავიდა და პირველი კლიენტიც იქ გამოჩნდა.
 							<br><br>
 							ჯიბეში შვიდი ლარი ედო. უცებ ვიღაცამ ათჯერ მეტი შესთავაზა და გაჰყვა.
@@ -291,11 +1295,11 @@
 							<br><br>
 							უბნის მაღაზიაში წვენი და ერთჯერადი სუპები იყიდა.
 							<br><br>
-							იმ ღამით, სახლში ჯერ ერთი კაცი მოვიდა. მერე მეორე. მერე სათვალავი აირია.
+							იმავე ღამით, სახლში ჯერ ერთი კაცი მოვიდა. მერე მეორე. მერე სათვალავი აირია.
 							<br><br>
-							წამებში მოდიოდა ბევრი ფული. ახალგაზრდა სხეულზე უარს არავინ ამბობდა. კლიენტებსი ძირითადად სახლში იღებდა. თავიდანვე ქუჩაში არ დამდგარა. მაგრამ მერე მაინც დაიწყო გაპარვა და „პლეშკაზე“ მუშაობა. მას მერე ინგას და მისი მეგობარი ტრანსის გზებიც გაიყო. 
+							წამებში მოდიოდა ბევრი ფული. ახალგაზრდა სხეულზე უარს არავინ ამბობდა. კლიენტებს, ძირითადად, სახლში იღებდა. თავიდანვე ქუჩაში არ დამდგარა. მაგრამ მერე მაინც დაიწყო გაპარვა და „პლეშკაზე“ მუშაობა. მას მერე ინგას და მისი მეგობარი ტრანსის გზებიც გაიყო. 
 							<br><br>
-							ინგას თავადაც შეეძლო ამ საქმით თავიც ერჩინა.
+							ინგას თავადაც შეეძლო ამ საქმით თავი ერჩინა.
 							<br><br>
 							კლიენტები განსხვავდებოდნენ. ასაკით, შეხედულებებით, სოციალური მდგომარეობით. მოდიოდა ყველა. ათასნაირი მოთხოვნებით, სურვილებით, საიდუმლოებით. 
 							<br><br>
@@ -310,18 +1314,17 @@
 
 
 		<div class="inga_story8">
-			<!-- <img width="100%" src="./assets/img/bgred1.jpg" /> -->
 			<div class="inga_story8-middle-image">
-				<img width="65%" src="./assets/img/22.png" />
+				<img width="65%" src="https://gdb.rferl.org/446C9373-376F-4B81-BA57-A48405820387.png" />
 			</div>
 			<div class="inga_story8-main-container">
 				<div class="inga_story8-title title">
-					<img  src="./assets/img/silence.png" />
+					<img  src="https://gdb.rferl.org/47F15C11-C9E5-4D73-9BE0-70DEE9D3C95F.png" />
 				</div>
 				<div class="inga_story8-first-container">
 					<div class="inga_story8-first-image">
-						<img width="100%" src="./assets/img/24.png"/>
-						<img width="100%" src="./assets/img/25.png"/>
+						<img width="100%" src="https://gdb.rferl.org/38A99556-EC8E-4FB0-9F5F-D2B9A6D951F0.png"/>
+						<img width="100%" src="https://gdb.rferl.org/D5EA7E14-E770-4286-B1C7-81D9189BD77F.png"/>
 					</div>
 					<div class="inga_story8-first-paragraph">
 						<p>
@@ -329,41 +1332,41 @@
 							<br><br>
 							ეს იყო ხალხი, უამრავი პრობლემით. მათ, როგორც წესი, ჰყავდათ ცოლები, მაგრამ ამბობდნენ, რომ ეზიზღებოდათ ქალთან კონტაქტი. ჩემთან რომ მოდიონენ ხოლმე, მოჰქონდათ ლიფები და მთხოვდნენ მათთვის ჩამეცმია.  
 							<br><br>
-							მე ვფიქრობდი, რომ ეს ის ხალხია, ვისაც სინამდვილეში კაცთან ურთიერთობა სურდა,  მაგრამ მიდიოდა ტრანსთან, რადგან ის სუსტია,  ფემინური და მისი არ ეშინია. 
+							მე ვფიქრობდი, რომ ეს ის ხალხია, ვისაც სინამდვილეში კაცთან ურთიერთობა სურდა,  მაგრამ მიდიოდა ტრანსთან, რადგან ის სუსტია,  ფემინური და მისი არავის ეშინია. 
 							<br><br>
-							საშინელი მოთხოვნები ს და სურვილები ქონდათ. რატომღაც მგონია, რომ ჰეტეროსექსუალ ქალ სექს-მუშაკებს ისეთ რამეებს არ სთხოვენ, რასაც ჩვენ. 
+							საშინელი მოთხოვნები  და სურვილები ჰქონდათ. რატომღაც მგონია, რომ ჰეტეროსექსუალ ქალ სექს-მუშაკებს ისეთ რამეებს არ სთხოვენ, რასაც ჩვენ. 
 							<br><br>
-							სექსმუშაკებს შორის მე ყველაზე პატარა ვიყავი. მაგრამ ჩემს გარდა, 15-16 წლის ბავშვები მოდიოდნენ ხოლმე მოპედებით ან ველოსიპედებით, იქვე ტყეში მოითავებდნენ საქმეს და მიდიოდნენ - ისინი არ იყვნენ ჩემსავით სახლიდან გამოქცეულები.
+							სექს-მუშაკებს შორის მე ყველაზე პატარა ვიყავი. მაგრამ ჩემს გარდა, 15-16 წლის ბავშვები მოდიოდნენ ხოლმე მოპედებით ან ველოსიპედებით, იქვე ტყეში მოითავებდნენ საქმეს და მიდიოდნენ - ისინი არ იყვნენ ჩემსავით სახლიდან გამოქცეულები.
 							<br><br>
-							დღეს, მგონი აღარ დადიან, როგორც ვიცი, ყველაფერი ელექტრონულად ხდება. სპეციალურ საიტებზე. შეხვალ, ხედავ, რომ სექს მომსახურებას გთავაზობს  ვითომ 28 წლის ქალი, მიხვალ ადგილზე და 15-16 წლის გოგო გხვდება. უარს არავინ ამბობს. 
+							დღეს, მგონი აღარ დადიან, როგორც ვიცი, ყველაფერი ელექტრონულად ხდება. სპეციალურ საიტებზე. შეხვალ, ხედავ, რომ სექს-მომსახურებას გთავაზობს  ვითომ 28 წლის ქალი, მიხვალ ადგილზე და 15-16 წლის გოგო გხვდება. უარს არავინ ამბობს. 
 						</p>
 					</div>
 					<div class="inga_story8-second-image">
-						<img width="100%" src="./assets/img/23.png"/>
+						<img width="100%" src="https://gdb.rferl.org/3E45AC92-6521-4790-81AE-6F623E773FFB.png"/>
 					</div>
 				</div>
 				<div class="inga_story-second-container">
 					<div class="inga_story8-third-image">
-						<img width="100%" src="./assets/img/26.png"/>
+						<img width="100%" src="https://gdb.rferl.org/E094F451-F778-4811-A113-B12C0538C660.png"/>
 					</div>
 					<div class="inga_story8-second-paragraph">
 						<p>
-							ეს უჩინარი საქმეა. როცა გარეთ ვიდექი პოლიცია ყველაფერს კარგად ხედავდა.  არასოდეს გავუჩერებივარ და უკითხავს იქ რატომ ვიდექი. ისედაც ყველაფერი გასაგები იყო.  
+							ეს უჩინარი საქმეა. როცა გარეთ ვიდექი, პოლიცია ყველაფერს კარგად ხედავდა.  არასოდეს გავუჩერებივარ და უკითხავს იქ რატომ ვიდექი. ისედაც ყველაფერი გასაგები იყო.  
 							<br><br>
 							პოლიცია მხოლოდ მაშინ მავიწროვებდა, როცა სოკოს ბაღში მეძინა და ვაგზალზე ვმუშაობდი. თუ ვინმე სადმე ახლოს რამეს მოიპარავდა,  მეუბნებოდნენ, აქ ნუ ათევ ღამეს, შენზე ეჭვი რომ არ გვქონდესო.  
 							<br><br>
-							ასე გავხდი 17 წლის და  რესტორანში მიმტანად მუშაობა ვცადე.  ეს ისევ სხვა ადამიანის ცხოვრება იყო, ჩემი არა. კაცის ტანსაცმელში და გარეგნობით. დაბალი ხელფასით.  ოპერაციის გაკეთებას ისევ ვერ შევძლებდი და  სხვა გამოსავალი ვერ ვნახე, ისევ უკან, ქუჩაში დავბრუნდი. 
+							ასე გავხდი 17 წლის და  რესტორანში მიმტანად მუშაობა ვცადე.  ეს ისევ სხვა ადამიანის ცხოვრება იყო, ჩემი-არა. კაცის ტანსაცმელში და გარეგნობით. დაბალი ხელფასით.  ოპერაციის გაკეთებას ისევ ვერ შევძლებდი და  სხვა გამოსავალი ვერ ვნახე, ისევ უკან, ქუჩაში დავბრუნდი. 
 							<br><br>
 							იმ ადგილს ისე ვებღაუჭებოდი, თითქოს ცირკის „პლეშკა“ კი არა, პარლამენტის დეპუტატის სკამი იყო. 
 							<br><br>
-							ერთ დღეს  ყველაფერი საშინლად აუტანელი გახდა. ახლაც შეიძლება საჭმლის ჭამის დროს გამახსენდეს რომელიმე კლიენტი, უცებ კოვზი დავაგდო და სახეში ხელები წავიშინო. 
+							ერთ დღეს  ყველაფერი საშინლად აუტანელი გახდა და ქუჩა მივატოვე. ახლაც შეიძლება საჭმლის ჭამის დროს გამახსენდეს რომელიმე კლიენტი, უცებ კოვზი დავაგდო და სახეში ხელები წავიშინო. 
 
 						</p>
 					</div>
 				</div>
 				<div class="inga_story8-third-container">
 					<div class="inga_story8-forth-image">
-						<img width="100%" src="./assets/img/27.png">
+						<img width="100%" src="https://gdb.rferl.org/10B809BF-A7AD-4B4A-94CB-DB67AD756920.png">
 					</div>
 				</div>
 			</div>
@@ -371,17 +1374,17 @@
 			
 		</div> 
 		<div>
-			<img width="100%" src="./assets/img/redDown.png"/>
+			<img width="100%" src="https://gdb.rferl.org/B13273E2-0D10-48F7-87C6-E30943D13C46.png"/>
 		</div>
 	</section>
 
 
 	<section class="second_section" >
 		<div class="chapter2">
-			<img src="./assets/img/chapter2.png"/>
+			<img src="https://gdb.rferl.org/8FB8B3BF-ED48-47F2-91E9-1100AA5C5D75.png"/>
 		</div>
 		<div class="main-title title">
-			<img  src="./assets/img/part2/text1.png" />
+			<img  src="https://gdb.rferl.org/C440306F-96D6-4390-ACD2-4D4F5557FF19.png" />
 		</div>
 		<article class="first-article redBack">
 			<p>
@@ -393,7 +1396,7 @@
 		</article>
 		<article class="second-article" >
 			<p>
-				პროსტიტუცია, –გამოიწვევს გაფრთხილებას ან დაჯარიმებას შრომის ანაზღაურების ნახევარ მინიმალურ ოდენობამდე.
+				პროსტიტუცია - გამოიწვევს გაფრთხილებას ან დაჯარიმებას შრომის ანაზღაურების ნახევარ მინიმალურ ოდენობამდე.
 				<br><br>
 				იგივე ქმედება, ჩადენილი განმეორებით, ადმინისტრაციული სახდელის დადებიდან ერთი წლის განმავლობაში, –
 				
@@ -427,10 +1430,10 @@
 			</p>
 		</article>
 		<div class="second_section-first-image">
-			<img width="100%"  src="./assets/img/part2/1.png"/>
+			<img width="100%"  src="https://gdb.rferl.org/2885FD7F-48E6-4AF9-9D63-78E367722C3A.png"/>
 		</div>
 		<div class="second_section-second-title title">
-			<img src="./assets/img/part2/text2.png"/>
+			<img src="https://gdb.rferl.org/E38A210B-79BD-41DA-9B63-BF62B976D8B0.png"/>
 		</div>
 		<article class="forth-article blackBack">
 			<p>
@@ -442,7 +1445,7 @@
 				<br><br>
 				სექს-სამუშაოში უმეტესად ქუჩაში მცხოვრები და მომუშავე, სახლიდან წამოსული, მიუსაფარი ბავშვები ერთვებიან. თამარ შარაშიძის ვარაუდით, პროსტიტუციაში ჩართული უნდა იყოს 13-14 წლის ასაკის, დაახლოებით, 4-5 მოზარდიც იმ ბავშვებს შორის, ვისზეც „კარიტასი“ მზრუნველობს.  
 				<br><br>
-				ბავშვები, ამას, როგორც წესი, მალავენ. ვინც ფაქტი ერთხელ მაინც დაადასტურა, „კარიტასმა“ ამბავი შესაბამის სტრუქტურებს შეატყობინა. თითქოს მოკვლევაც დაიწყო, მაგრამ პროცესი შორს არ წასულა. „კარიტასს“ არა აქვს ინფორმაცია აგო თუ არა რომელიმე სრულწლოვანმა ადამიანმა - „კლიენტმა“ პასუხი. 
+				ბავშვები, ამას, როგორც წესი, მალავენ. ვინც ფაქტი ერთხელ მაინც დაადასტურა, „კარიტასმა“ ამბავი შესაბამის სტრუქტურებს შეატყობინა. თითქოს მოკვლევაც დაიწყო, მაგრამ პროცესი შორს არ წასულა. „კარიტასს“ არა აქვს ინფორმაცია, აგო თუ არა რომელიმე სრულწლოვანმა ადამიანმა - „კლიენტმა“ პასუხი. 
 				<br><br>
 				ინფორმაცია, რომელიც პროსტიტუციაში ჩართული ბავშვების შესახებ „კარიტასს“ გააჩნია, ძალიან ფრაგმენტულია. ისევე როგორც ბავშვთა უფლებებზე მომუშავე სხვა არასამთავრობო ორგანიზაციების თუ სახელმწიფო უწყებების (და ამ საკითხზე მეტი ინფორმაციის მოსაგროვებლად რადიო თავისუფლებამ რამდენიმე მათგანს (გაეროს ბავშვთა ფონდი, სახალხი დამცველი, საია, პარტნიორობა ადამიანის უფლებებისთვის, GCRT, თანადგომა)  მიმართა .
 				<br><br>
@@ -453,10 +1456,10 @@
 			</p>
 		</article>
 		<div class="second_section-second-image">
-			<img width="100%"  src="./assets/img/part2/3.png"/>
+			<img width="100%"  src="https://gdb.rferl.org/66B6B297-6580-4657-BB31-5BC70C4644ED.png"/>
 		</div>
 		<div class="second_section-third-title title">
-			<img src="./assets/img/part2/text3.png"/>
+			<img src="https://gdb.rferl.org/4AD02E44-AED2-4745-8E96-F3C5D00C4B2E.png"/>
 		</div>
 		<article class="fifth-article blackBack">
 			<p>
@@ -485,22 +1488,13 @@
 				<p>2020 წელს - იანვარი-აპრილის თვეში მსგავს ფაქტზე გამოძიება არ დაწყებულა.</p>
 			</div>
 			
-			<!-- <p>
-				2018 წელს გამოძიება დაიწყო სულ 5 ფაქტზე:
-				<span></span> 
-				<br>
-				2019 წელს გამოძიება დაიწყო 2 ფაქტზე:  თბილისში - 1, <br>ქვემო ქართლში - 1.
-				<br>
-				2020 წელს - იანვარი-აპრილის თვეში მსგავს ფაქტზე გამოძიება არ დაწყებულა.
-
-			</p> -->
 		</article>
 		
 		<div class="second_section-forth-title title">
-			<img width="100%" src="./assets/img/part2/text4.png"/>
+			<img width="100%" src="https://gdb.rferl.org/A0DF67C7-4638-41A2-A19F-8518BAD32588.png"/>
 		</div>
 		<div class="second_section-third-image">
-			<img width="100%" src="./assets/img/part2/2.png"/>
+			<img width="100%" src="https://gdb.rferl.org/93D4D68D-9D3D-4D82-9CD5-D8D46115750F.png"/>
 		</div>
 		<article class="third-article redBack">
 			
@@ -530,21 +1524,20 @@
 	</section>
 
 	<section class="third-section">
-		<!-- <img width="100%" src="./assets/img/part3/blackBackUp.png" /> -->
 		<div>
-			<img width="100%" src="./assets/img/blackUp.png"/>
+			<img width="100%" src="https://gdb.rferl.org/E319EF38-38B1-496B-9F80-E1BE9945BC15.png"/>
 		</div>
 		<div >
 			<div class="chapter3">
-				<img width="100%" src="./assets/img/chapter3.png" />
+				<img width="100%" src="https://gdb.rferl.org/F986D069-2CE0-443F-9E41-BD72BF7F8DA5.png" />
 			</div>
 			<div class="third-section-main-container">
 				<div class="third-section-first-title title">
-					<img  src="./assets/img/part3/text1.png"/>
+					<img  src="https://gdb.rferl.org/27971515-FD61-4447-9ACD-12FAAEA5FB58.png"/>
 				</div>
 			</div>
 			<div class="third-section-first-image">
-				<img width="100%" src="./assets/img/part3/1.png"/>
+				<img width="100%" src="https://gdb.rferl.org/F7A94C8F-4306-4DB1-80E2-533897C19536.png"/>
 			</div>
 			<article class="third-section-first-paragraph">
 				<p>
@@ -552,11 +1545,11 @@
 					<br><br>
 					„როცა ვიხსენებ, თავი მართლა ძალადობის თემაზე გადაღებულ კოშმარულ ფილმში მგონია. არადა, ყველაფერი აქ, ქუთაისში მოხდა“, - გვიყვება თეა ფანჩულიძე, „წამების მსხვერპლთა რეაბილიტაციის ცენტრის“ იმერეთის ბიუროს ფსიქოლოგი. 
 					<br><br>
-					გოგო, რომელსაც პირობითად ელენეს დავარქმევთ, 13 წლისა იყო, როცა ოჯახში დაწყებული კონფლიქტის დ გამო სახლიდან წამოვიდა. 
+					გოგო, რომელსაც პირობითად ელენეს დავარქმევთ, 13 წლისა იყო, როცა ოჯახში დაწყებული კონფლიქტის  გამო სახლიდან წამოვიდა. 
 					<br><br>
-					ქუჩაში დარჩენილმა 28 წლის კაცი გაიცნო. ეს ნაცნობობა კი სექსუალური კავშირით დასრულდა - როგორც ელენე ამბობდა, ის ჯერ ნარკოტიკებით გააბრუეს, შემდეგ გააუპატიურეს.
+					ქუჩაში დარჩენილმა, 28 წლის კაცი გაიცნო. ეს ნაცნობობა კი სექსუალური კავშირით დასრულდა - როგორც ელენე ამბობდა, ის ჯერ ნარკოტიკებით გააბრუეს, შემდეგ გააუპატიურეს.
 					<br><br>
-					პოლიციას არავინ დაუკავებია. მეტიც, როგორც თეა ყევება გოგო გაამტყუნეს. ორი წლის წინ გამართულ ერთ-ერთ შეხვედრაზე, რომელსაც ესწრებოდნენ თეა და პოლიციის ის ჩინოსანიც, რომელიც ამ საქმეს იძიებდა, ფსიქოლოგმა მისგან ასეთი ფრაზა მოისმინა: 
+					პოლიციას არავინ დაუკავებია. მეტიც, როგორც თეა ყევება, გოგო გაამტყუნეს. ორი წლის წინ გამართულ ერთ-ერთ შეხვედრაზე, რომელსაც ესწრებოდნენ თეა და პოლიციის ის ჩინოსანიც, რომელიც ამ საქმეს იძიებდა, ფსიქოლოგმა მისგან ასეთი ფრაზა მოისმინა: 
 					<br><br>
 					„ყველაფრის გამომწვევი გოგო იყო, ის გოგო იყო პროვოკატორი“.
 					<br><br>
@@ -570,7 +1563,7 @@
 					<br><br>
 					ზუსტად ექვსი თვის შემდეგ, როცა ელენე 15 წლის იქნებოდა, ვიღაცამ ის სახლის მახლობლად დატოვა - ჩამოგლეჯილი ტანსაცმლით, დასუსტებული, არაერთი ვენერიული დაავადებით.
 					<br><br>
-					ელენე დაუჯერებელ ამბებს ყვებოდა:, თუ როგორ წაიყვანეს ვიღაც უცნობებმა და სხვა გოგონებთან ერთად ჩაკეტეს  სახლში, სადაც ძირითადად სხვა ეროვნების კლიენტებს ემსახურებოდნენ.  ელენე მ ვარაუდობს, რომ ეს აჭარაში ხდებოდა. ამბობდა იმასაც, რომ სექს მომსახურებას არ აიძულებდნენ. და იმასაც, რომ ფულს თავად არ იღებდა. 
+					ელენე დაუჯერებელ ამბებს ყვებოდა: თუ როგორ წაიყვანეს ვიღაც უცნობებმა და სხვა გოგონებთან ერთად ჩაკეტეს  სახლში, სადაც ძირითადად სხვა ეროვნების კლიენტებს ემსახურებოდნენ.  ელენე ვარაუდობს, რომ ეს აჭარაში ხდებოდა. ამბობდა იმასაც, რომ სექს-მომსახურებას არ აიძულებდნენ. და იმასაც, რომ ფულს თავად არ იღებდა. 
 				</p>
 			</article>
 			
@@ -581,10 +1574,9 @@
 
 
 	<section class="forth-section">
-		<!-- <img width="100%" src="./assets/img/part3/blackBackDown.png"/> -->
 		<div >
 			<div class="forth-section-first-image">
-				<img width="100%" src="./assets/img/part3/3.jpg"/>
+				<img width="100%" src="https://gdb.rferl.org/875EED89-846C-403F-A3E6-06EBA67BD1C6.jpg"/>
 			</div>
 			<article class="forth-section-first-paragraph">
 				<p>
@@ -592,35 +1584,59 @@
 					<br><br>
 					პოლიციას რამდენჯერმე მისცა ჩვენება, მაგრამ შემდეგ ბოლომდე აღარ ითანამშრომლა. ამბობდა, რომ ქუთაისის ტერიტორიაზე ხედავდა იმ პირს, ვინც ის პროსტიტუციაში ჩართო და აქტიურობის ეშინოდა. ეშინოდა, რომ მის ოჯახს რამეს დაუშავებდნენ. დღემდე ამ ამბავს არა აქვს დასასრული  - პასუხი არავის უგია. 
 					<br><br>
-					თეა ფანჩულიძე და  იმერეთში მომუშავე ერთ-ერთი ორგანიზაციის სოცმუშაკიგვიყვებიან, რომ დღემდე პროსტიტუციაში ჩაბმული არასრულწლოვნების ნაწილი ქუთაისის ერთ-ერთ კაფე-ბართან იკრიბება. მეორე ნაწილი კი, ქართველი და ბოშა ბავშვები, იმერეთის გავლით ტრანზიტულად მოძრავი ტრაილერის მძღოლებს ემსახურებიან. 
+					თეა ფანჩულიძე და  იმერეთში მომუშავე ერთ-ერთი ორგანიზაციის სოცმუშაკი გვიყვებიან, რომ დღემდე პროსტიტუციაში ჩაბმული არასრულწლოვნების ნაწილი ქუთაისის ერთ-ერთ კაფე-ბართან იკრიბება. მეორე ნაწილი კი, ქართველი და ბოშა ბავშვები, იმერეთის გავლით ტრანზიტულად მოძრავი ტრაილერის მძღოლებს ემსახურებიან. 
 					<br><br>
 					ტრაილერი კონკრეტულ ადგილას ჩერდება. მძღოლი გოგოს მანქანაში ისვამს, მიჰყავს, ბოლოს ე.წ. „ტრაილერების ტეკასთან“ ჩამოსვამს და ფულს უხდის.  სექსმომსახურების საფასური საშუალოდ 10 დოლარიდან 20 დოლარამდე მერყეობს. პროსტიტუციაში ჩართული ბავშვების ასაკი კი 12 წლიდან იწყება.
 					<br><br>
 					სოცმუშაკი რადიო თავისუფლებას ეუბნება, რომ პოლიციამდე მიტანილი რამდენიმე კონკრეტული ამბავი დღემდე არ არის გამოძიებული. 
 					<br><br>
 					„როდესაც პოლიციას ვეკითხები, რა ქენით, დააკავეთ დამნაშავე? პასუხი სულ ერთია -  გვაცადეთ, მიმდინარეობს გამოძიება.
+					<br><br>
+					თუმცა გამოძიების შედეგი დღემდე არავის უნახავს.
 				</p>
 			</article>
 
 			<div class="forth-section-second-image">
-				<img width="100%" src="./assets/img/part3/4.jpg"/>
+				<img width="100%" src="https://gdb.rferl.org/C310EF9C-6613-4354-8AB4-3524FC8D3AB7.jpg"/>
 			</div>
 			
 		</div>
 
 	</section> 
 	<div>
-		<img width="100%" src="./assets/img/blackDown.png"/>
+		<img width="100%" src="https://gdb.rferl.org/1CCCD43E-09CB-45D1-AC0E-58964CCF7912.png"/>
 	</div>
 
 
 	<footer>
-		<img width="100%" src="./assets/img/authors.png" />
+		<img width="100%" src="https://gdb.rferl.org/1B64B3E8-34BA-473C-A29A-8370A5D2F364.png" />
 	</footer>
 
 
 	 <a href="#" id="scroll" style="display: none;"><span></span></a> 
 </body>
-<script src="./script.js"></script>
+<script>
+	
+	$(window).scroll(function(){ 
+		if ($(this).scrollTop() > 100) { 
+			$('#scroll').fadeIn(); 
+		} else { 
+			$('#scroll').fadeOut(); 
+		} 
+	}); 
+	$(document).ready(function () {
+		setTimeout(() => {
+			$(".loader-holder").css("display","none");          
+		}, 2000);
+
+	});    
+
+
+	$('#scroll').click(function(){ 
+		$("html, body").animate({ scrollTop: 0 }, 600); 
+		return false; 
+	}); 
+
+</script>
 </body>
 </html>
